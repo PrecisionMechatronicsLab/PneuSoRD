@@ -75,6 +75,12 @@ TODO
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RelayBlock.png" alt="LabView Relay Block" width="300">
 </p>
 
+### Rate Limiter Block
+TODO
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RateLimiterBlock.png" alt="LabView Rate Limiter Block" width="300">
+</p>
+
 # Pump Control
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-pump.png" alt="Motor driver control scheme" width="400">
