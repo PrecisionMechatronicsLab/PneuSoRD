@@ -7,8 +7,10 @@
 
 The Pneumatic Soft Robotics Driver (PneuSoRD) as shown in Fig. 2 is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves Fig. 1a-c with single or multiple solenoids which each take a binary input and proportional valves Fig. 1d which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules are driven by a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW.
 
-## Pump/Compressor
-TODO Add figure with compressor, reservoir and pressure sensor.
+## Pump/Compressor 
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-pump.png" alt="Air compressor with reservoir and pressure sensor" width="300">
+</p>
 The main components of a compressed air system are the pump or source, an optional accumulator and an inline pressure sensor. The addition of an air receiver (storage reservoir or gas tank) to the pneumatic system smooths pulsating flow and prevents excessively temporary pressure drop during sudden short-term demand. Moreover, the air receiver allows for reduced energy consumption and fast pressurization of soft actuators.
 
 ## 3/2 Valve Configuration
@@ -70,7 +72,7 @@ This block generates a wave function defined by the user. For this application a
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-DigitalWrite.png" alt="LabView Digital Write Block" width="600">
 </p>
-This block allows the user to set the state of a single user predefined pin. The input to this block is the pin state (bool). This block contains no output functionality for use in the LabVIEW environment. When used in conjunction with the Simulated Squarewave block this can be used to generate a software PWM signal.
+This block allows the user to set the state of a single user predefined pin. The input to this block is the binary pin state. This block contains no output functionality for use in the LabVIEW environment. When used in conjunction with the Simulated Squarewave block this can be used to generate a software PWM signal.
 
 ### PID Block
 <p align="center">
@@ -79,10 +81,17 @@ This block allows the user to set the state of a single user predefined pin. The
 This block implements a standard PID controller with P gain, I gain and D gain controls. The input to this block is the driving error signal. The output for this block is the driving control signal.
 
 ### Relay Block
+TODO Replace this image
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RelayBlock.png" alt="LabView Relay Block" width="600">
 </p>
-TODO
+This block can be used to create a hysteresis window with two states. The inputs to this block are the maximum and minimum crossing point for the window and the driving error signal. The output to this block is the binary state of the signal.
+
+TODO Replace this image
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-Relay3Block.png" alt="LabView 3 State Relay Block" width="600">
+</p>
+When combined with a second relay block, a three state hysteresis window can be implemented. The block inputs are the maximum, minimum and middle crossing point for the windows and the driving error signal. The output to this block is a pair of binary states for each window.
 
 ### Rate Limiter Block
 <p align="center">
