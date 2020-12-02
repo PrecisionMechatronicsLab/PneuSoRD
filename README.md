@@ -160,12 +160,12 @@ As seen in the image below, the driver interfaces with the myRIO via the two IDC
 </p>
 
 ## Electrical Design
-Each module has been designed to maximise the variety of devices which can be driven. The following shows the implementation of the three drive designs and the feedback sensor electronics.
-Red - 26 On/Off Drives
-Yellow - 5 Proportional Drives
-Blue - 1 Motor Drive
-Green - Power Supply 
-Orange - Sensor Inputs
+Each module has been designed to maximise the variety of devices which can be driven. The following shows the implementation of the three drive designs and the feedback sensor electronics.  
+Red - 26 On/Off Drives  
+Yellow - 5 Proportional Drives  
+Blue - 1 Motor Drive  
+Green - Power Supply  
+Orange - Sensor Inputs  
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOTopView.png" alt="MyRIO Side View" width="600">
 </p>
