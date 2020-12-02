@@ -102,12 +102,15 @@ When combined with a second relay block, a three state hysteresis window can be 
 </p>
 This block limits the rate of change over time of the input signal. The input to this block is the signal to be rate limited. The output to this block is the rate limited signal.
 
-# Pump Control
+# Control Implementations
+The following section decribes a control implementation for each valve type. Each of these control implementations are available in the repository above.
+
+## Pump Control
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-pump.png" alt="Motor driver control scheme" width="400">
 </p>
 
-# On/Off 3/2
+## On/Off 3/2
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32hys.png" alt="3/2 on-off valve system with bang-bang controller" width="400">
 </p>
@@ -115,7 +118,7 @@ This block limits the rate of change over time of the input signal. The input to
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32pwm.png" alt="3/2 on-off valve system with PID controller" width="400">
 </p>
 
-# On/Off 2x 2/2
+## On/Off 2x 2/2
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22hys.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="400">
 </p>
@@ -123,13 +126,38 @@ This block limits the rate of change over time of the input signal. The input to
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22pwm.png" alt="2x 2/2 on-off valve system with PID controller" width="400">
 </p>
 
-# Proportional 3/2
+## Proportional 3/2
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32prop.png" alt="Proportional PWM driver with hysteresis controller" width="400">
 </p>
 
-# Proportional 2x 2/2
+## Proportional 2x 2/2
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22prop.png" alt="Proportional PWM driver with PID controller" width="400">
 </p>
 
+# Hardware Overview
+The driver allows for the control of up to 31 valves for use in a multitude of applications. The number of sensor inputs is limited according the maximum number of analog inputs of myRIO. Consequently, 8 sensors input headers can be used to perform independent feedback control on 8 chambers. Note that more chambers can be actuated if they are allowed to share the same pressure values. 
+An electrical PWM is used to drivethe proportional valves through a buck converter, which produces the required DC voltage. Where as a pneumatic PWM is produces by switching on and off the supply to the On/Off valves to produce the required driving signal. The PneuSoRD has two power inputs each of which can supply an operating voltage 7-25V. Two inputs were chosen to maximise the range or valves that could be driven. The primary input is used to power the 5V regulator and is required for the board's protection functionality. Whilst the secondary input is only required if a second voltage level is needed.
+
+As seen in the image below, the driver interfaces with the myRIO via the two IDC connectors on the left hand side of the myRIO. 
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOSideView.png" alt="MyRIO Side View" width="600">
+</p>
+
+## Electrical Design
+Each module has been designed to maximise the variety of devices which can be driven. The following shows the implementation of the three drive designs and the feedback sensor electronics.
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOTopView.png" alt="MyRIO Side View" width="600">
+</p>
+
+### Motor/Proportional Drive
+The PneuSoRD has 6 Proportional Drive modules. The motor driver in Fig. 3a is sized for a peak current capacity up to 1.4A. This driver is designed for driving dc motor pumps which typically have a current range of 500mA to 1A. The 5 proportional drivers in Fig. 3a are sized for a peak current capacity up to 700mA. This driver is designed for driving proportional valves which typically have a current range of 200 to 500mA. The motor and proportional valve drivers are based off a synchronous rectifier buck converters Fig. 4. The buck converters switch is driven by a 40-200kHz PWM signal with a variable duty cycle direct from the myRIO. The switch is a DRV88703.6A, a half-bridge motor driver and was selected due to its variety of protection capabilities as outlined in Section III-D. Each drive can be supplied by either of the two onboard power inputs via a selectable voltage header on each module. Current regulation is achieved based on the analog input VREF and the voltage on the ISEN pin, which is proportional to motor current through an external sensing resistor. This is adjustable via the Rsen resistor and can provide a range of current limits depending on the application. The motor drive can supply a continuous 1.4A with an adjustable peak rating of 2.5A (adjustable up to 3.6 A). The remaining proportional drives can supply a continuous 500mA with an adjustable peak rating of 700mA
+(adjustable up to 700mA).
+
+### On/Off Drive
+Since On/Off valves can be driven via a simple digital signal, the PneuSoRD takes advantage of the 26 Digital Input/Output (DIO) pins on the myRIO. The TPS1H000 is a fully protected single channel high-side power switch with an integrated power Field-Effect Transistor (FET) as shown in Fig. 5. An adjustable current limit via the Rsen resistor improves system reliability by limiting the inrush or overload current. The high accuracy of the current limit improves overload protection. The trip delay capacitor has been selected to minimise the trip time if a fault event occurs. A light emitting diode is connected to the common collector fault pin, this provides user feedback if a fault event were to occur.
+Each drive can be supplied by either of the two onboard power inputs via a selectable voltage header on each module. The On/Off drives can supply a continuous 500mA
+
+### Sensor Input
+A total of 8 sensor input headers are included on the PneuSoRD as shown in Fig. 6. These are designed to provide each sensor with 5V. Primarily, this input is designed for 0-5V sensors that can be read via the ADC input of the myRIO. An optional resistor can be added to allow 4-20mA style sensors to be used.
