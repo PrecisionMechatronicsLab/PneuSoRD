@@ -131,7 +131,8 @@ TODO Talk about the control interface
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32OnOff.png" alt="LabView control interface 3/2 On/Off" width="600">
 </p>
-### PWM
+
+### PID
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32pwm.png" alt="3/2 on-off valve system with PID controller" width="400"> 
 </p>
@@ -160,7 +161,7 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface22OnOff.png" alt="LabView control interface 2/2 On/Off" width="600">
 </p>
 
-### PWM
+### PID
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22pwm.png" alt="2x 2/2 on-off valve system with PID controller" width="400"> 
 </p>
@@ -217,8 +218,8 @@ Each module has been designed to maximise the variety of devices which can be dr
 	Red - 26 On/Off Drives  
 </div>
 <div class="text-yellow mb-2">
-	Yellow - 5 Proportional Dr
-</div>ives  
+	Yellow - 5 Proportional Drives
+</div>  
 <div class="text-blue mb-2">
 	Blue - 1 Motor Drive  
 </div>
