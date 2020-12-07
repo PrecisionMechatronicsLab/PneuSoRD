@@ -112,17 +112,32 @@ The following section decribes a control implementation for each valve type. Eac
 </p>
 TODO Add side by side version of a LabVIEW file
 
+TODO Talk about the control interface
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface 32 PID" width="600">
+</p>
+
 ## On/Off 3/2
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32hys.png" alt="3/2 on-off valve system with bang-bang controller" width="400"> 
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32hys.png" alt="3/2 on-off valve system with bang-bang controller" width="400">
 </p>
 TODO Add side by side version of a LabVIEW file
+
+TODO Talk about the control interface
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+</p>
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32pwm.png" alt="3/2 on-off valve system with PID controller" width="400"> 
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32pwm.png" alt="3/2 on-off valve system with PID controller" width="400">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="3/2 on-off valve system with PID controller" width="400">
 </p>
 TODO Add side by side version of a LabVIEW file
+
+TODO Talk about the control interface
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+</p>
 
 ## On/Off 2x 2/2
 <p align="center">
@@ -130,11 +145,21 @@ TODO Add side by side version of a LabVIEW file
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22hys.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="400">
 </p>
 TODO Add side by side version of a LabVIEW file
+
+TODO Talk about the control interface
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+</p>
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22pwm.png" alt="2x 2/2 on-off valve system with PID controller" width="400"> 
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22pwm.png" alt="2x 2/2 on-off valve system with PID controller" width="400">
 </p>
 TODO Add side by side version of a LabVIEW file
+
+TODO Talk about the control interface
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+</p>
 
 ## Proportional 3/2
 <p align="center">
@@ -143,12 +168,22 @@ TODO Add side by side version of a LabVIEW file
 </p>
 TODO Add side by side version of a LabVIEW file
 
+TODO Talk about the control interface
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+</p>
+
 ## Proportional 2x 2/2
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22prop.png" alt="Proportional PWM driver with PID controller" width="400"> 
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22prop.png" alt="Proportional PWM driver with PID controller" width="400">
 </p>
 TODO Add side by side version of a LabVIEW file
+
+TODO Talk about the control interface
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+</p>
 
 # Hardware Overview
 The driver allows for the control of up to 31 valves for use in a multitude of applications. The number of sensor inputs is limited according the maximum number of analog inputs of myRIO. Consequently, 8 sensors input headers can be used to perform independent feedback control on 8 chambers. Note that more chambers can be actuated if they are allowed to share the same pressure values. 
