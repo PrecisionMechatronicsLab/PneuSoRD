@@ -84,13 +84,11 @@ This block allows the user to set the state of a single user predefined pin. The
 This block implements a standard PID controller with P gain, I gain and D gain controls. The input to this block is the driving error signal. The output for this block is the driving control signal.
 
 ### Relay Block
-TODO Replace this image
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RelayBlock.png" alt="LabView Relay Block" width="600">
 </p>
 This block can be used to create a hysteresis window with two states. The inputs to this block are the maximum and minimum crossing point for the window and the driving error signal. The output to this block is the binary state of the signal.
 
-TODO Replace this image
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-Relay3Block.png" alt="LabView 3 State Relay Block" width="600">
 </p>
@@ -248,7 +246,7 @@ TODO Add close up image of section showing wiring
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOCloseUpSensor.png" alt="MyRIO Sensors" width="600">
 </p>
 
-## Something
+## Pin Mapping
 TODO Table of pin mapping from driver to myrio
 
 | MyRIO Pin | PneuSoRD Pin | MyRIO Pin | PneuSoRD Pin | 
