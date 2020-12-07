@@ -108,13 +108,13 @@ The following section decribes a control implementation for each valve type. Eac
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-pump.png" alt="Motor driver control scheme" width="400"> 
 </p>
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="Motor driver control scheme" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/ControlPump.png" alt="Motor driver control scheme" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
 
 TODO Talk about the control interface
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface 32 PID" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/InterfacePump.png" alt="LabView control interface Pump" width="600">
 </p>
 
 ## On/Off 3/2
@@ -123,13 +123,13 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32hys.png" alt="3/2 on-off valve system with bang-bang controller" width="400"> 
 </p>
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="3/2 on-off valve system with bang-bang controller" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOff.png" alt="3/2 on-off valve system with bang-bang controller" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
 
 TODO Talk about the control interface
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32OnOff.png" alt="LabView control interface 3/2 On/Off" width="600">
 </p>
 ### PWM
 <p align="center">
@@ -151,13 +151,13 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22hys.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="400"> 
 </p>
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control22OnOff.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
 
 TODO Talk about the control interface
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface22OnOff.png" alt="LabView control interface 2/2 On/Off" width="600">
 </p>
 
 ### PWM
@@ -165,13 +165,13 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22pwm.png" alt="2x 2/2 on-off valve system with PID controller" width="400"> 
 </p>
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="2x 2/2 on-off valve system with PID controller" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control22PID.png" alt="2x 2/2 on-off valve system with PID controller" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
 
 TODO Talk about the control interface
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface22PID.png" alt="LabView control interface 2/2 PID" width="600">
 </p>
 
 ## Proportional 3/2
@@ -179,13 +179,13 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32prop.png" alt="Proportional PWM driver with hysteresis controller" width="400"> 
 </p>
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="Proportional PWM driver with hysteresis controller" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32Prop.png" alt="Proportional PWM driver with hysteresis controller" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
 
 TODO Talk about the control interface
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32Prop.png" alt="LabView control interface 3/2 Proportional" width="600">
 </p>
 
 ## Proportional 2x 2/2
@@ -193,13 +193,13 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22prop.png" alt="Proportional PWM driver with PID controller" width="400"> 
 </p>
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="Proportional PWM driver with PID controller" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control22Prop.png" alt="Proportional PWM driver with PID controller" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
 
 TODO Talk about the control interface
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface22Prop.png" alt="LabView control interface 2/2 Proportional" width="600">
 </p>
 
 # Hardware Overview
@@ -213,12 +213,25 @@ As seen in the image below, the driver interfaces with the myRIO via the two IDC
 
 ## Electrical Design
 Each module has been designed to maximise the variety of devices which can be driven. The following shows the implementation of the three drive designs and the feedback sensor electronics.  
-Red - 26 On/Off Drives  
-Yellow - 5 Proportional Drives  
-Blue - 1 Motor Drive  
-Green - Power Supply  
-Orange - Sensor Inputs  
-Pink - Expansion Headers  
+<div class="text-red mb-2">
+	Red - 26 On/Off Drives  
+</div>
+<div class="text-yellow mb-2">
+	Yellow - 5 Proportional Dr
+</div>ives  
+<div class="text-blue mb-2">
+	Blue - 1 Motor Drive  
+</div>
+<div class="text-green mb-2">
+	Green - Power Supply  
+</div>
+<div class="text-orange mb-2">
+	Orange - Sensor Inputs  
+</div>
+<div class="text-pink mb-2">
+	Pink - Expansion Headers  
+</div>
+
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOTopViewBoxes.png" alt="MyRIO Top View" width="600">
 </p>
