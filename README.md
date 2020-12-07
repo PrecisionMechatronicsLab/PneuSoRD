@@ -161,6 +161,7 @@ TODO Talk about the control interface
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
 </p>
+
 ### PWM
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22pwm.png" alt="2x 2/2 on-off valve system with PID controller" width="400"> 
