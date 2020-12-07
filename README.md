@@ -262,24 +262,43 @@ TODO Add close up image of section showing wiring
 
 ## Pin Mapping
 TODO Table of pin mapping from driver to myrio
-| MXP A |||| MXP B |||| 
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| MyRIO Pin | PneuSoRD Pin | MyRIO Pin | PneuSoRD Pin | MyRIO Pin | PneuSoRD Pin | MyRIO Pin | PneuSoRD Pin | 
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| MXP A Pin 34 | SO26 | MXP A Pin 33 | 3V3  | MXP B Pin 34 | SO13 | MXP B Pin 33 | 3V3  |
-| MXP A Pin 32 | SO25 | MXP A Pin 31 | P5   | MXP B Pin 32 | SO12 | MXP B Pin 31 | P2   |
-| MXP A Pin 30 | GND  | MXP A Pin 29 | P4   | MXP B Pin 30 | GND  | MXP B Pin 29 | P1   |
-| MXP A Pin 28 | GND  | MXP A Pin 27 | P3   | MXP B Pin 28 | GND  | MXP B Pin 27 | MTR  |
-| MXP A Pin 26 | SO24 | MXP A Pin 25 | SO23 | MXP B Pin 26 | SO11 | MXP B Pin 25 | SO10 |
-| MXP A Pin 24 | GND  | MXP A Pin 23 | SO22 | MXP B Pin 24 | GND  | MXP B Pin 23 | SO09 |
-| MXP A Pin 22 | SO21 | MXP A Pin 21 | SO20 | MXP B Pin 22 | SO08 | MXP B Pin 21 | SO07 |
-| MXP A Pin 20 | GND  | MXP A Pin 19 | SO19 | MXP B Pin 20 | GND  | MXP B Pin 19 | SO06 |
-| MXP A Pin 18 | SO18 | MXP A Pin 17 | SO17 | MXP B Pin 18 | SO05 | MXP B Pin 17 | SO04 |
-| MXP A Pin 16 | GND  | MXP A Pin 15 | SO16 | MXP B Pin 16 | GND  | MXP B Pin 15 | SO03 |
-| MXP A Pin 14 | GND  | MXP A Pin 13 | SO15 | MXP B Pin 14 | GND  | MXP B Pin 13 | SO02 |
-| MXP A Pin 12 | GND  | MXP A Pin 11 | SO14 | MXP B Pin 12 | GND  | MXP B Pin 11 | SO01 |
-| MXP A Pin 10 | NC   | MXP A Pin 9  | AI8  | MXP B Pin 10 | NC   | MXP B Pin 9  | AI4  |
-| MXP A Pin 8  | GND  | MXP A Pin 7  | AI7  | MXP B Pin 8  | GND  | MXP B Pin 7  | AI3  |
-| MXP A Pin 6  | NC   | MXP A Pin 5  | AI6  | MXP B Pin 6  | NC   | MXP B Pin 5  | AI2  |
-| MXP A Pin 4  | NC   | MXP A Pin 3  | AI5  | MXP B Pin 4  | NC   | MXP B Pin 3  | AI1  |
-| MXP A Pin 2  | NC   | MXP A Pin 1  | 5V   | MXP B Pin 2  | NC   | MXP B Pin 1  | 5V   |
+
+| MyRIO MXP A Pin | PneuSoRD Pin | MyRIO MXP A Pin | PneuSoRD Pin | 
+| ------ | ------ | ------ | ------ |
+| MXP A Pin 34 | SO26 | MXP A Pin 33 | 3V3  |
+| MXP A Pin 32 | SO25 | MXP A Pin 31 | P5   |
+| MXP A Pin 30 | GND  | MXP A Pin 29 | P4   |
+| MXP A Pin 28 | GND  | MXP A Pin 27 | P3   |
+| MXP A Pin 26 | SO24 | MXP A Pin 25 | SO23 |
+| MXP A Pin 24 | GND  | MXP A Pin 23 | SO22 |
+| MXP A Pin 22 | SO21 | MXP A Pin 21 | SO20 |
+| MXP A Pin 20 | GND  | MXP A Pin 19 | SO19 |
+| MXP A Pin 18 | SO18 | MXP A Pin 17 | SO17 |
+| MXP A Pin 16 | GND  | MXP A Pin 15 | SO16 |
+| MXP A Pin 14 | GND  | MXP A Pin 13 | SO15 |
+| MXP A Pin 12 | GND  | MXP A Pin 11 | SO14 |
+| MXP A Pin 10 | NC   | MXP A Pin 9  | AI8  |
+| MXP A Pin 8  | GND  | MXP A Pin 7  | AI7  |
+| MXP A Pin 6  | NC   | MXP A Pin 5  | AI6  |
+| MXP A Pin 4  | NC   | MXP A Pin 3  | AI5  |
+| MXP A Pin 2  | NC   | MXP A Pin 1  | 5V   |
+
+| MyRIO MXP B Pin | PneuSoRD Pin | MyRIO MXP B Pin | PneuSoRD Pin | 
+| ------ | ------ | ------ | ------ |
+| MXP B Pin 34 | SO13 | MXP B Pin 33 | 3V3  |
+| MXP B Pin 32 | SO12 | MXP B Pin 31 | P2   |
+| MXP B Pin 30 | GND  | MXP B Pin 29 | P1   |
+| MXP B Pin 28 | GND  | MXP B Pin 27 | MTR  |
+| MXP B Pin 26 | SO11 | MXP B Pin 25 | SO10 |
+| MXP B Pin 24 | GND  | MXP B Pin 23 | SO09 |
+| MXP B Pin 22 | SO08 | MXP B Pin 21 | SO07 |
+| MXP B Pin 20 | GND  | MXP B Pin 19 | SO06 |
+| MXP B Pin 18 | SO05 | MXP B Pin 17 | SO04 |
+| MXP B Pin 16 | GND  | MXP B Pin 15 | SO03 |
+| MXP B Pin 14 | GND  | MXP B Pin 13 | SO02 |
+| MXP B Pin 12 | GND  | MXP B Pin 11 | SO01 |
+| MXP B Pin 10 | NC   | MXP B Pin 9  | AI4  |
+| MXP B Pin 8  | GND  | MXP B Pin 7  | AI3  |
+| MXP B Pin 6  | NC   | MXP B Pin 5  | AI2  |
+| MXP B Pin 4  | NC   | MXP B Pin 3  | AI1  |
+| MXP B Pin 2  | NC   | MXP B Pin 1  | 5V   |
