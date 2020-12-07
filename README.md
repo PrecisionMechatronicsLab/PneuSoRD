@@ -263,7 +263,8 @@ TODO Add close up image of section showing wiring
 ## Pin Mapping
 TODO Table of pin mapping from driver to myrio
 
-| MyRIO MXP A Pin | PneuSoRD Pin | MyRIO MXP A Pin | PneuSoRD Pin | 
+### MXP A
+| MyRIO Pin | PneuSoRD Pin | MyRIO Pin | PneuSoRD Pin | 
 | ------ | ------ | ------ | ------ |
 | MXP A Pin 34 | SO26 | MXP A Pin 33 | 3V3  |
 | MXP A Pin 32 | SO25 | MXP A Pin 31 | P5   |
@@ -283,7 +284,8 @@ TODO Table of pin mapping from driver to myrio
 | MXP A Pin 4  | NC   | MXP A Pin 3  | AI5  |
 | MXP A Pin 2  | NC   | MXP A Pin 1  | 5V   |
 
-| MyRIO MXP B Pin | PneuSoRD Pin | MyRIO MXP B Pin | PneuSoRD Pin | 
+### MXP B
+| MyRIO Pin | PneuSoRD Pin | MyRIO Pin | PneuSoRD Pin | 
 | ------ | ------ | ------ | ------ |
 | MXP B Pin 34 | SO13 | MXP B Pin 33 | 3V3  |
 | MXP B Pin 32 | SO12 | MXP B Pin 31 | P2   |
