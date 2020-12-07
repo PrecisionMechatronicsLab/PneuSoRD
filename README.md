@@ -261,7 +261,7 @@ TODO Add close up image of section showing wiring
 </p>
 
 ## Pin Mapping
-TODO Table of pin mapping from driver to myrio
+The pin mapping for the PneuSoRD integrates the two MXP connectors of the MyRIO. The table below presents the pin mapping as seen in the orientation of the PneuSoRD driver. This is also the orientation of the pins of the breakout header.
 
 ### MXP A
 | MyRIO Pin | PneuSoRD Pin | MyRIO Pin | PneuSoRD Pin | 
