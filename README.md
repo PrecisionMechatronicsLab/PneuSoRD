@@ -214,24 +214,24 @@ As seen in the image below, the driver interfaces with the myRIO via the two IDC
 
 ## Electrical Design
 Each module has been designed to maximise the variety of devices which can be driven. The following shows the implementation of the three drive designs and the feedback sensor electronics.  
-<div class="text-red mb-2">
-	Red - 26 On/Off Drives  
-</div>
-<div class="text-yellow mb-2">
-	Yellow - 5 Proportional Drives
-</div>  
-<div class="text-blue mb-2">
-	Blue - 1 Motor Drive  
-</div>
-<div class="text-green mb-2">
-	Green - Power Supply  
-</div>
-<div class="text-orange mb-2">
-	Orange - Sensor Inputs  
-</div>
-<div class="text-pink mb-2">
-	Pink - Expansion Headers  
-</div>
+<!-- <div class="text-red mb-2"> -->
+Red - 26 On/Off Drives  
+<!-- </div> -->
+<!-- <div class="text-yellow mb-2"> -->
+Yellow - 5 Proportional Drives
+<!-- </div>   -->
+<!-- <div class="text-blue mb-2"> -->
+Blue - 1 Motor Drive  
+<!-- </div> -->
+<!-- <div class="text-green mb-2"> -->
+Green - Power Supply  
+<!-- </div> -->
+<!-- <div class="text-orange mb-2"> -->
+Orange - Sensor Inputs  
+<!-- </div> -->
+<!-- <div class="text-pink mb-2"> -->
+Pink - Expansion Headers  
+<!-- </div> -->
 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOTopViewBoxes.png" alt="MyRIO Top View" width="600">
