@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\c3206230\Dropbox\2019 Soft Robotics\Toolkit\PCBs\PCB_IC\PCB_IC\PCB_IC.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=pcb_ic-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=pcb_ic-slotholes.txt|DrillLayers=gtl,g1,g2,gbl

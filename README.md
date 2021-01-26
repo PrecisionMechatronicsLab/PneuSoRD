@@ -3,32 +3,37 @@
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/OverviewDiagram.png" alt="Overview of the Pneumatic Soft Robotics Controller (PneuSoRD), including the electronics driver board and National Instruments myRIO controller, which is connected to a single pump and air receiver, up to 5 proportional valves, and 26 on-off valves. Soft robotic glove reproduced with permission from [35]. Copyright 2019, Mary Ann Liebert, Inc." width="600">
 </p>
 
+The Pneumatic Soft Robotics Driver (PneuSoRD) as shown in Fig. 2 is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves Fig. 1a-c with single or multiple solenoids which each take a binary input and proportional valves Fig. 1d which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules can be driven by either a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW or an Arduino DUE.
 
-
-The Pneumatic Soft Robotics Driver (PneuSoRD) as shown in Fig. 2 is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves Fig. 1a-c with single or multiple solenoids which each take a binary input and proportional valves Fig. 1d which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules are driven by a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW.
+## Driver
+The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
 
 ## Pump/Compressor 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-pump.png" alt="Air compressor with reservoir and pressure sensor" width="300">
 </p>
+
 The main components of a compressed air system are the pump or source, an optional accumulator and an inline pressure sensor. The addition of an air receiver (storage reservoir or gas tank) to the pneumatic system smooths pulsating flow and prevents excessively temporary pressure drop during sudden short-term demand. Moreover, the air receiver allows for reduced energy consumption and fast pressurization of soft actuators.
 
 ## 3/2 Valve Configuration
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-32.png" alt="Pneumatic system with a 3/2 valve coniguration" width="300">
 </p>
+
 For the 3/2 valve system as shown above, the inlet port is connected to the compressor or the receiver, the outlet port is connected to the soft actuator and the exhaust port is open to atmosphere. The 3/2 valve system implies constantly inflating and deflating each pneumatic chamber, which causes the pressure in the actuator to continuously oscillate around its target and potentially reduces the lifetime of the valves.
 
 ## 3/3 Valve Configuration
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-33.png" alt="Pneumatic system with a 3/3, 4/3 or 5/3 valve coniguration." width="300">
 </p>
+
 A solution to this problem includes the use of a single but expensive 3/3 (3-way, 3-position) or 5/3 (5-way, 3-position) solenoid valve shown in the figure above. 
 
 ## 2x 2/2 Valve Configuration
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-22.png" alt="Pneumatic system with 2x 2/2 valve coniguration" width="300">
 </p>
+
 Alternatively, a system with two 2/2 (2-way, 2-position) valves can be used. In this case, the first valve is responsible for the charging process and has its inlet port connected to the compressor or the receiver and outlet port connected to the soft actuator. The second valve is responsible for the discharging process and has its inlet port connected to the soft actuator and outlet port open to atmosphere. Proportional valves outperform on-off solenoid valves in regards to tracking precision and steady-state accuracy but are 3-4 times more expensive.
 
 ## Design Overview
@@ -50,18 +55,21 @@ Below is an overview of some of the major LabVIEW blocks used for a the outlined
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-TimedLoop.PNG" alt="LabView Timed Loop Block" width="600">
 </p>
+
 The Timed Loop block  forms the foundation of the control system developed. All LabVIEW blocks are placed within this loop which determines the speed at which the control system runs. Whilst it is possible to replace this block with a While Loop, a fixed period is preferred. This block contains a parameter for setting the loop frequency or period.
 
 ### Analog Input
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-AnalogInput.png" alt="LabView Analog Input Block" width="600">
 </p>
+
 This block reads the analog value of a single user predefined pin. This block contains no input functionality for use in the LabVIEW environment. The block outputs a 12bit analog value.
 
 ### PWM
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-PWM.png" alt="LabView PWM Block" width="600">
 </p>
+
 This block generates a hardware PWM signal to a single user predefined pin. The inputs to this block are the PWM duty cycle and PWM frequency. This block contains no output functionality for use in the LabVIEW environment.
 
 
@@ -69,35 +77,41 @@ This block generates a hardware PWM signal to a single user predefined pin. The 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-SimulatedSquarewave.png" alt="LabView Simulated Squarewave Block" width="600">
 </p>
+
 This block generates a wave function defined by the user. For this application a squarewave has been selected to mimic a PWM signal. The inputs to this block are the amplitude of the signal (for PWM generation this is 1), PWM duty cycle and PWM frequency. This block outputs the state of the Simulated wave at each loop itteration. 
 
 ### Digital Write
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-DigitalWrite.png" alt="LabView Digital Write Block" width="600">
 </p>
+
 This block allows the user to set the state of a single user predefined pin. The input to this block is the binary pin state. This block contains no output functionality for use in the LabVIEW environment. When used in conjunction with the Simulated Squarewave block this can be used to generate a software PWM signal.
 
 ### PID Block
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-PIDBlock.png" alt="LabView PID Block" width="600">
 </p>
+
 This block implements a standard PID controller with P gain, I gain and D gain controls. The input to this block is the driving error signal. The output for this block is the driving control signal.
 
 ### Relay Block
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RelayBlock.png" alt="LabView Relay Block" width="600">
 </p>
+
 This block can be used to create a hysteresis window with two states. The inputs to this block are the maximum and minimum crossing point for the window and the driving error signal. The output to this block is the binary state of the signal.
 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-Relay3Block.png" alt="LabView 3 State Relay Block" width="600">
 </p>
+
 When combined with a second relay block, a three state hysteresis window can be implemented. The block inputs are the maximum, minimum and middle crossing point for the windows and the driving error signal. The output to this block is a pair of binary states for each window.
 
 ### Rate Limiter Block
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RateLimiterBlock.png" alt="LabView Rate Limiter Block" width="600">
 </p>
+
 This block limits the rate of change over time of the input signal. The input to this block is the signal to be rate limited. The output to this block is the rate limited signal.
 
 # Control Implementations

@@ -1,0 +1,67 @@
+Altium Designer Pick and Place Locations
+C:\Users\c3206230\Dropbox\2019 Soft Robotics\Toolkit\PCBs\PCB_DueAdapterL2\PCB_DueAdapterL2\Project Outputs for DueShieldL2\Pick Place for DueShieldL2.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       20/01/21
+Time:       15:27
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+Designator Comment          Layer       Footprint             Center-X(mm) Center-Y(mm) Rotation Description                                                                                   
+J11        SSW-103-01-T-D   BottomLayer SMTC-SSW-103-01-X-D   -22.9100mm   -49.6700mm   180      "SQ Post Socket, Through-hole, Vertical, -55 to 105 degC, 2.54 mm Pitch, 6-Pin, Female, RoHS" 
+R24        10K              TopLayer    RESC0603(1608)_N      -65.9024mm   -50.0544mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R23        10K              TopLayer    RESC0603(1608)_N      -73.3136mm   -50.0544mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R22        10K              TopLayer    RESC0603(1608)_N      -65.9024mm   -45.6094mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R21        10K              TopLayer    RESC0603(1608)_N      -73.3136mm   -45.6094mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R20        10K              TopLayer    RESC0603(1608)_N      -71.6894mm   -50.0544mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R19        10K              TopLayer    RESC0603(1608)_N      -79.0286mm   -50.0544mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R18        10K              TopLayer    RESC0603(1608)_N      -71.6894mm   -45.6094mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R17        10K              TopLayer    RESC0603(1608)_N      -79.0286mm   -45.6094mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R16        10K              TopLayer    RESC0603(1608)_N      -65.9024mm   -41.1644mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R15        10K              TopLayer    RESC0603(1608)_N      -73.3136mm   -41.1644mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R14        10K              TopLayer    RESC0603(1608)_N      -65.9024mm   -36.7194mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R13        10K              TopLayer    RESC0603(1608)_N      -73.3136mm   -36.7194mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R12        10K              TopLayer    RESC0603(1608)_N      -71.6894mm   -41.1644mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R11        10K              TopLayer    RESC0603(1608)_N      -79.0286mm   -41.1644mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R10        10K              TopLayer    RESC0603(1608)_N      -71.6894mm   -36.7194mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R9         10K              TopLayer    RESC0603(1608)_N      -79.0286mm   -36.7194mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R8         10K              TopLayer    RESC0603(1608)_N      -65.9024mm   -32.2744mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R7         10K              TopLayer    RESC0603(1608)_N      -73.3136mm   -32.2744mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R6         10K              TopLayer    RESC0603(1608)_N      -65.9024mm   -27.7776mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R5         10K              TopLayer    RESC0603(1608)_N      -73.3136mm   -27.7116mm   270      "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R4         10K              TopLayer    RESC0603(1608)_N      -71.6894mm   -32.2744mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R3         10K              TopLayer    RESC0603(1608)_N      -79.0286mm   -32.2744mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R2         10K              TopLayer    RESC0603(1608)_N      -71.6894mm   -27.7116mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+R1         10K              TopLayer    RESC0603(1608)_N      -79.0286mm   -27.7116mm   90       "10K 0.1W 1% 0603 (1608 Metric)  SMD"                                                         
+Q12        BSS138           TopLayer    FP-318-08-IPC_B       -68.7416mm   -50.0544mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q11        BSS138           TopLayer    FP-318-08-IPC_B       -76.1076mm   -50.0544mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q10        BSS138           TopLayer    FP-318-08-IPC_B       -68.7416mm   -45.6094mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q9         BSS138           TopLayer    FP-318-08-IPC_B       -76.1076mm   -45.6094mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q8         BSS138           TopLayer    FP-318-08-IPC_B       -68.7416mm   -41.1644mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q7         BSS138           TopLayer    FP-318-08-IPC_B       -76.1471mm   -41.1644mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q6         BSS138           TopLayer    FP-318-08-IPC_B       -68.7416mm   -36.7194mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q5         BSS138           TopLayer    FP-318-08-IPC_B       -76.1471mm   -36.7194mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q4         BSS138           TopLayer    FP-318-08-IPC_B       -68.7599mm   -32.2744mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q3         BSS138           TopLayer    FP-318-08-IPC_B       -76.1682mm   -32.2744mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q2         BSS138           TopLayer    FP-318-08-IPC_B       -68.7599mm   -27.7116mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+Q1         BSS138           TopLayer    FP-318-08-IPC_B       -76.1682mm   -27.7116mm   180      "MOSFET N-CH 50V 220MA SOT-23"                                                                
+J6         61203421721      TopLayer    61203421721           -85.3136mm   -14.5696mm   270      "Male Box Header WR-BHD, THT, Angled, pitch 2.54 mm, 34 pins"                                 
+R25_Sens4  DNP              TopLayer    RESC0603(1608)_L      -76.6156mm   -99.2180mm   180      "249R 0.1W 1% 0603 (1608 Metric)  SMD"                                                        
+R25_Sens3  DNP              TopLayer    RESC0603(1608)_L      -70.2656mm   -99.2180mm   180      "249R 0.1W 1% 0603 (1608 Metric)  SMD"                                                        
+R25_Sens2  DNP              TopLayer    RESC0603(1608)_L      -63.9410mm   -99.2180mm   180      "249R 0.1W 1% 0603 (1608 Metric)  SMD"                                                        
+R25_Sens1  DNP              TopLayer    RESC0603(1608)_L      -57.5910mm   -99.2180mm   180      "249R 0.1W 1% 0603 (1608 Metric)  SMD"                                                        
+J10_Sens4  B3B-XH-A(LF)(SN) TopLayer    FP-B3B-XH-A_LF_SN-MFG -77.0728mm   -105.0854mm  270      "CONN HEADER VERT 3POS 2.5MM"                                                                 
+J10_Sens3  B3B-XH-A(LF)(SN) TopLayer    FP-B3B-XH-A_LF_SN-MFG -70.7228mm   -105.0854mm  270      "CONN HEADER VERT 3POS 2.5MM"                                                                 
+J10_Sens2  B3B-XH-A(LF)(SN) TopLayer    FP-B3B-XH-A_LF_SN-MFG -64.3728mm   -105.0854mm  270      "CONN HEADER VERT 3POS 2.5MM"                                                                 
+J10_Sens1  B3B-XH-A(LF)(SN) TopLayer    FP-B3B-XH-A_LF_SN-MFG -58.0228mm   -105.0854mm  270      "CONN HEADER VERT 3POS 2.5MM"                                                                 
+J9         Header18x2       TopLayer    Header18x2            -21.5900mm   -80.0100mm   180      ""                                                                                            
+J1         61203421721      TopLayer    61203421721           -85.3136mm   -71.9746mm   270      "Male Box Header WR-BHD, THT, Angled, pitch 2.54 mm, 34 pins"                                 
+J8         Header8x1        TopLayer    Header8x1             0.0000mm     -62.2300mm   270      ""                                                                                            
+J7         Header8x1        TopLayer    Header8x1             -48.2600mm   -67.3100mm   270      ""                                                                                            
+J5         Header8x1        TopLayer    Header8x1             0.0000mm     -39.3700mm   270      ""                                                                                            
+J4         Header8x1        TopLayer    Header8x1             -48.2600mm   -44.4500mm   270      ""                                                                                            
+J3         Header8x1        TopLayer    Header8x1             -48.2600mm   -21.5900mm   270      ""                                                                                            
+J2         Header10x1       TopLayer    Header10x1            0.0000mm     -14.9860mm   270      ""                                                                                            

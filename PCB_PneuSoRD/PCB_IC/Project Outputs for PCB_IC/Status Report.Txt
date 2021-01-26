@@ -1,0 +1,10 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of Project [PCB_IC.PrjPCB]
+   Generated File[Pick Place for PCB_IC.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 3:50:33 PM On 22/01/2021

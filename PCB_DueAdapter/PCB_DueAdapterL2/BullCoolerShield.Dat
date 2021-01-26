@@ -1,0 +1,32 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~101|Field=Description~String~Description~101|Field=Designator~String~Designator~101|Field=Footprint~String~Footprint~101|Field=LibRef~String~LibRef~101|Field=Quantity~Integer~Quantity~101|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~BullCoolerShield.PrjPCB|ReportField=ProjectFullPath~D:\OneDrive - The University Of Newcastle\UniversityOfNewcastle\PhD\BullCooler\PCB\BullCoolerShield.PrjPCB|ReportField=Title~Bill of Materials For Project [BullCoolerShield.PrjPCB] (No PCB Document Selected)|ReportField=ReportTime~1:13:29 PM|ReportField=ReportDate~20/11/2020|ReportField=ReportDateTime~20/11/2020 1:13:29 PM|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=TotalQuantity~100|ReportField=TotalActualPrice~0|ReportField=TotalTargetPrice~0|ReportField=VersionControl_RevNumber~|ReportField=VersionControl_ProjFolderRevNumber~|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~20/11/2020|ReportField=CurrentTime~1:11:58 PM|ReportField=Date~|ReportField=DocumentFullPathAndName~D:\OneDrive - The University Of Newcastle\UniversityOfNewcastle\PhD\BullCooler\PCB\TopSheet.SchDoc|ReportField=DocumentName~TopSheet.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~13/11/2020|ReportField=Organization~|ReportField=ProjectName~BullCoolerShield.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~BullCoolerShield.PrjPCB|ReportField=DataSourceFullPath~D:\OneDrive - The University Of Newcastle\UniversityOfNewcastle\PhD\BullCooler\PCB\BullCoolerShield.PrjPCB|ReportField=PCBConfigurationName~Sources|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|100nF C-1206|Ceramic 50V 1206|C1, C3, C9, C10, C11|C-1206|C-1206|5
+2|220uF 50V Poly||C2, C4|CAPAE127P600-8N|C-Poly|2
+3|47uF 50V AuPoly||C5_Prop1, C5_Prop2|EEH-ZA1H220P|C-Poly|2
+4|10uF 50V 1206|CAP 10uF 50V ±20% 1206 (3216 Metric) Thickness 1.9mm SMD|C6_Prop1, C6_Prop2|CAPC1206(3216)190_N|CMP-1037-04983-1|2
+5|470uF 50V AuPoly||C7_Prop1, C7_Prop2, C8|CAPAE137130X163M|C-Poly|3
+6|LED Green|SMD mono-color Chip LED, WL-SMCW, Green|D1, D3_Prop1, D3_Prop2, D5|0603_A|CMP-1426-00002-1|4
+7|SK34A|DIODE SCHOTTKY 5A 30V SMA|D2, D4_Prop1, D4_Prop2|FP-DO-214AC-MFG|CMP-56206-000004-1|3
+8|1725656|Male Header, Pitch 2.54 mm, 1 x 2 Position, Height 9 mm, Tail Length 3.5 mm|J1, J2_Prop1, J2_Prop2, J10|PHOE-1725656-2|CMP-2000-05299-1|4
+9|CON-SMA-EDGE-S|CONN SMA JACK STR EDGE MNT|J3|FP-CON-SMA-EDGE-S-MFG|CMP-204357-000001-1|1
+10|Header10x1||J4|Header10x1|Header10x1|1
+11|Header8x1||J5, J6, J7, J8, J9|Header8x1|Header8x1|5
+12|Header18x2||J11|Header18x2|Header18x2|1
+13|Zeta433||J12|Zeta433-SM|Zeta433|1
+14|100uH|PA4344.104NLThttps://products.pulseelex.com/files/product_files/P771.pdf|L1|INDC177172X70N|Inductor1717|1
+15|330uH||L2_Prop1, L2_Prop2|L1212|Inductor1212|2
+16|Header 3|Header, 3-Pin|P1_Sens1, P1_Sens2, P1_Sens3, P1_Sens4, P1_Sens5, P1_Sens6, P1_Sens7, P1_Sens8, P1_Sens9, P1_Sens10, P1_Sens11|HDR1X3|Header 3|11
+17|BC846BLT3G|General Purpose Transistor, NPN Silicon, 3-Pin SOT-23, Pb-Free, Tape and Reel|Q1, Q2_Prop1, Q2_Prop2|ONSC-SOT-23-3-318-08_V|CMP-1048-00780-1|3
+18|500R|510R 0.1W 5% 0603 (1608 Metric)  SMD|R1, R6_Prop1, R6_Prop2|RESC0603(1608)_L|CMP-1012-00067-1|3
+19|10K|10K 0.1W 1% 0603 (1608 Metric)  SMD|R2, R7_Prop1, R7_Prop2, R19, R21|RESC0603(1608)_N|CMP-1012-00623-1|5
+20|1R 1206|1R2 0.25W 5% 1206 (3216 Metric)  SMD|R3, R4, R5, R8_Prop1, R8_Prop2|RESC1206(3216)_N|CMP-1014-00004-1|5
+21|2K7|10K 0.1W 1% 0603 (1608 Metric)  SMD|R9_Sens1, R9_Sens2, R9_Sens3, R9_Sens4, R9_Sens5, R9_Sens6, R9_Sens7, R9_Sens8, R9_Sens9, R9_Sens10, R9_Sens11|RESC0603(1608)_N|CMP-1012-00623-1|11
+22|3K3|10K 0.1W 1% 0603 (1608 Metric)  SMD|R10_Sens1, R10_Sens2, R10_Sens3, R10_Sens4, R10_Sens5, R10_Sens6, R10_Sens7, R10_Sens8, R10_Sens9, R10_Sens10, R10_Sens11|RESC0603(1608)_N|CMP-1012-00623-1|11
+23|10K5 1206|0.25W 1206|R11|R-1206|R-1206|1
+24|3K3 1206|0.25W 1206|R12|R-1206|R-1206|1
+25|2K5 1206|0.25W 1206|R13|R-1206|R-1206|1
+26|10m 1206|1R2 0.25W 5% 1206 (3216 Metric)  SMD|R14, R15_Prop1, R15_Prop2|RESC1206(3216)_N|CMP-1014-00004-1|3
+27|2M5|10K 0.1W 1% 0603 (1608 Metric)  SMD|R16|RESC0603(1608)_N|CMP-1012-00623-1|1
+28|5K|10K 0.1W 1% 0603 (1608 Metric)  SMD|R17|RESC0603(1608)_N|CMP-1012-00623-1|1
+29|990K|10K 0.1W 1% 0603 (1608 Metric)  SMD|R18, R20|RESC0603(1608)_N|CMP-1012-00623-1|2
+30|DRV8870||U1, U2_Prop1, U2_Prop2|SOIC127P600X170_HS-9N|DRV8870|3
+31|LM324MX|Low Power Quad Operational Amplifier, 14-pin Narrow SOIC|U3|D0014A_L|CMP-0055-00741-3|1

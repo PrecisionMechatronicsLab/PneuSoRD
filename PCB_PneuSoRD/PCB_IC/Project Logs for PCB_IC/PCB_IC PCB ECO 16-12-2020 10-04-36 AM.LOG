@@ -1,0 +1,13 @@
+Change Component Comment : Designator=C7 Old Comment=1uF 35V New Comment=1uF 50V
+Change Component Comment : Designator=R13 Old Comment=2K5 1206 New Comment=2K49 1206
+Change Component Comment : Designator=R11 Old Comment=5K5 1206 New Comment=5K49 1206
+Change Component Comment : Designator=R14_Sens1 Old Comment=250R New Comment=DNP
+Change Component Comment : Designator=R14_Sens2 Old Comment=250R New Comment=DNP
+Change Component Comment : Designator=R14_Sens3 Old Comment=250R New Comment=DNP
+Change Component Comment : Designator=R14_Sens4 Old Comment=250R New Comment=DNP
+Change Component Comment : Designator=R14_Sens5 Old Comment=250R New Comment=DNP
+Change Component Comment : Designator=R14_Sens6 Old Comment=250R New Comment=DNP
+Change Component Comment : Designator=R14_Sens7 Old Comment=250R New Comment=DNP
+Change Component Comment : Designator=R14_Sens8 Old Comment=250R New Comment=DNP
+Change Component Comment : Designator=C6 Old Comment=330nF 35V New Comment=330nF 50V
+Added Member To Class: ClassName=PowerSuppply Member=Component D8 LED Green
