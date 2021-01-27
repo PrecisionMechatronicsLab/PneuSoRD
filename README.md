@@ -18,14 +18,14 @@ Table of contents
 	 * [2x 2/2 Valve Configuration](##2x-2/2-Valve-Configuration)
 	 * [Design Overview](##Design-Overview)
    * [LabVIEW Overview](#LabVIEW-Overview)
-		 * [Main Loop](###Main-Loop)
-		 * [Analog Input](###Analog-Input)
-		 * [PWM](###PWM)
-		 * [Simulated Squarewave](###Simulated-Squarewave)
-		 * [Digital Write](###Digital-Write)
-		 * [PID Block](###PID-Block)
-		 * [Relay Block](###Relay-Block)
-		 * [Rate Limiter Block](###Rate-Limiter-Block)
+	 * [Main Loop](##Main-Loop)
+	 * [Analog Input](##Analog-Input)
+	 * [PWM](##PWM)
+	 * [Simulated Squarewave](##Simulated-Squarewave)
+	 * [Digital Write](##Digital-Write)
+	 * [PID Block](##PID-Block)
+	 * [Relay Block](##Relay-Block)
+	 * [Rate Limiter Block](##Rate-Limiter-Block)
    * [Control Implementations](#Control-Implementations)
 	 * [Pump Control](##Pump-Control)
 	 * [On/Off 3/2](##On/Off-3/2)
@@ -48,6 +48,8 @@ Table of contents
 
 # PneuSoRD Driver
 The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
+
+TODO Add more information regarding build
 
 # Pnuematic Overview
 ## Pump/Compressor 
@@ -93,21 +95,21 @@ LabVIEW offers a graphical programming approach that helps you visualize every a
 
 Below is an overview of some of the major LabVIEW blocks used for a the outlined control configurations for the PneuSoRD.
 
-### Main Loop
+## Main Loop
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-TimedLoop.PNG" alt="LabView Timed Loop Block" width="600">
 </p>
 
 The Timed Loop block  forms the foundation of the control system developed. All LabVIEW blocks are placed within this loop which determines the speed at which the control system runs. Whilst it is possible to replace this block with a While Loop, a fixed period is preferred. This block contains a parameter for setting the loop frequency or period.
 
-### Analog Input
+## Analog Input
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-AnalogInput.png" alt="LabView Analog Input Block" width="600">
 </p>
 
 This block reads the analog value of a single user predefined pin. This block contains no input functionality for use in the LabVIEW environment. The block outputs a 12bit analog value.
 
-### PWM
+## PWM
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-PWM.png" alt="LabView PWM Block" width="600">
 </p>
@@ -115,28 +117,28 @@ This block reads the analog value of a single user predefined pin. This block co
 This block generates a hardware PWM signal to a single user predefined pin. The inputs to this block are the PWM duty cycle and PWM frequency. This block contains no output functionality for use in the LabVIEW environment.
 
 
-### Simulated Squarewave
+## Simulated Squarewave
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-SimulatedSquarewave.png" alt="LabView Simulated Squarewave Block" width="600">
 </p>
 
 This block generates a wave function defined by the user. For this application a squarewave has been selected to mimic a PWM signal. The inputs to this block are the amplitude of the signal (for PWM generation this is 1), PWM duty cycle and PWM frequency. This block outputs the state of the Simulated wave at each loop itteration. 
 
-### Digital Write
+## Digital Write
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-DigitalWrite.png" alt="LabView Digital Write Block" width="600">
 </p>
 
 This block allows the user to set the state of a single user predefined pin. The input to this block is the binary pin state. This block contains no output functionality for use in the LabVIEW environment. When used in conjunction with the Simulated Squarewave block this can be used to generate a software PWM signal.
 
-### PID Block
+## PID Block
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-PIDBlock.png" alt="LabView PID Block" width="600">
 </p>
 
 This block implements a standard PID controller with P gain, I gain and D gain controls. The input to this block is the driving error signal. The output for this block is the driving control signal.
 
-### Relay Block
+## Relay Block
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RelayBlock.png" alt="LabView Relay Block" width="600">
 </p>
@@ -149,7 +151,7 @@ This block can be used to create a hysteresis window with two states. The inputs
 
 When combined with a second relay block, a three state hysteresis window can be implemented. The block inputs are the maximum, minimum and middle crossing point for the windows and the driving error signal. The output to this block is a pair of binary states for each window.
 
-### Rate Limiter Block
+## Rate Limiter Block
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RateLimiterBlock.png" alt="LabView Rate Limiter Block" width="600">
 </p>
