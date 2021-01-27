@@ -1,13 +1,55 @@
-# Pneumatic Overview
+# Overview
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/OverviewDiagram.png" alt="Overview of the Pneumatic Soft Robotics Controller (PneuSoRD), including the electronics driver board and National Instruments myRIO controller, which is connected to a single pump and air receiver, up to 5 proportional valves, and 26 on-off valves. Soft robotic glove reproduced with permission from [35]. Copyright 2019, Mary Ann Liebert, Inc." width="600">
 </p>
 
 The Pneumatic Soft Robotics Driver (PneuSoRD) as shown in Fig. 2 is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves Fig. 1a-c with single or multiple solenoids which each take a binary input and proportional valves Fig. 1d which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules can be driven by either a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW or an Arduino DUE.
 
-## Driver
+Table of contents
+=================
+
+<!--ts-->
+   * [Overview](#Overview)
+   * [PneuSoRD Driver](#PneuSoRD-Driver)
+   * [Pnuematic Overview](#Pnuematic-Overview)
+	 * [Pump/Compressor ](##Pump/Compressor )
+	 * [3/2 Valve Configuration](##3/2-Valve-Configuration)
+	 * [3/3 Valve Configuration](##3/3-Valve-Configuration)
+	 * [2x 2/2 Valve Configuration](##2x-2/2-Valve-Configuration)
+	 * [Design Overview](##Design-Overview)
+   * [LabVIEW Overview](#LabVIEW-Overview)
+		 * [Main Loop](###Main-Loop)
+		 * [Analog Input](###Analog-Input)
+		 * [PWM](###PWM)
+		 * [Simulated Squarewave](###Simulated-Squarewave)
+		 * [Digital Write](###Digital-Write)
+		 * [PID Block](###PID-Block)
+		 * [Relay Block](###Relay-Block)
+		 * [Rate Limiter Block](###Rate-Limiter-Block)
+   * [Control Implementations](#Control-Implementations)
+	 * [Pump Control](##Pump-Control)
+	 * [On/Off 3/2](##On/Off-3/2)
+		 * [Bang-Bang](###Bang-Bang)
+		 * [PID](###PID)
+	 * [On/Off 2x 2/2](##On/Off-2x-2/2)
+		 * [Bang-Bang](###Bang-Bang)
+		 * [PID](###PID)
+	 * [Proportional 3/2](##Proportional-3/2)
+	 * [Proportional 2x 2/2](##Proportional-2x-2/2)
+   * [Hardware Overview](#Hardware-Overview)
+	 * [Electrical Design](##Electrical-Design)
+		 * [Motor/Proportional Drive](###Motor/Proportional-Drive)
+		 * [On/Off Drive](###On/Off-Drive)
+		 * [Sensor Input](###Sensor-Input)
+	 * [Pin Mapping](##Pin-Mapping)
+		 * [MXP A](###MXP-A)
+		 * [MXP B](###MXP-B)
+<!--te-->
+
+# PneuSoRD Driver
 The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
 
+# Pnuematic Overview
 ## Pump/Compressor 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-pump.png" alt="Air compressor with reservoir and pressure sensor" width="300">
