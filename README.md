@@ -5,11 +5,18 @@
 
 The Pneumatic Soft Robotics Driver (PneuSoRD) as shown in Fig. 2 is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves Fig. 1a-c with single or multiple solenoids which each take a binary input and proportional valves Fig. 1d which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules can be driven by either a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW or an Arduino DUE.
 
+TODO  Add link to paper
+
+# Quickstart Guide
+
+TODO add quickstart guide
+
 Table of contents
 =================
 
 <!--ts-->
    * [Overview](#Overview)
+   * [Quickstart Guide](#Quickstart-Guide)
    * [PneuSoRD Driver](#PneuSoRD-Driver)
    * [Pnuematic Overview](#Pnuematic-Overview)
 	 * [Pump/Compressor ](##Pump/Compressor )
@@ -37,19 +44,22 @@ Table of contents
 	 * [Proportional 3/2](##Proportional-3/2)
 	 * [Proportional 2x 2/2](##Proportional-2x-2/2)
    * [Hardware Overview](#Hardware-Overview)
-	 * [Electrical Design](##Electrical-Design)
+	 * [Electrical Design (PneuSoRD)](##Electrical-Design-(PneuSoRD))
 		 * [Motor/Proportional Drive](###Motor/Proportional-Drive)
 		 * [On/Off Drive](###On/Off-Drive)
 		 * [Sensor Input](###Sensor-Input)
+	 *  [Arduino Sheild](##Arduino-Shield)
 	 * [Pin Mapping](##Pin-Mapping)
 		 * [MXP A](###MXP-A)
 		 * [MXP B](###MXP-B)
 <!--te-->
 
-# PneuSoRD Driver
+# PneuSoRD Driver and Shield
 The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
 
 TODO Add more information regarding build
+Cost
+etc
 
 # Pnuematic Overview
 ## Pump/Compressor 
@@ -170,6 +180,8 @@ The following section decribes a control implementation for each valve type. Eac
 </p>
 TODO Add side by side version of a LabVIEW file
 
+TODO Add arduino code or something for that option
+
 TODO Talk about the control interface
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/InterfacePump.png" alt="LabView control interface Pump" width="600">
@@ -185,6 +197,8 @@ TODO Talk about the control interface
 </p>
 TODO Add side by side version of a LabVIEW file
 
+TODO Add arduino code or something for that option
+
 TODO Talk about the control interface
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32OnOff.png" alt="LabView control interface 3/2 On/Off" width="600">
@@ -198,6 +212,8 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="3/2 on-off valve system with PID controller" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
+
+TODO Add arduino code or something for that option
 
 TODO Talk about the control interface
 <p align="center">
@@ -214,6 +230,8 @@ TODO Talk about the control interface
 </p>
 TODO Add side by side version of a LabVIEW file
 
+TODO Add arduino code or something for that option
+
 TODO Talk about the control interface
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface22OnOff.png" alt="LabView control interface 2/2 On/Off" width="600">
@@ -227,6 +245,8 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control22PID.png" alt="2x 2/2 on-off valve system with PID controller" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
+
+TODO Add arduino code or something for that option
 
 TODO Talk about the control interface
 <p align="center">
@@ -242,6 +262,8 @@ TODO Talk about the control interface
 </p>
 TODO Add side by side version of a LabVIEW file
 
+TODO Add arduino code or something for that option
+
 TODO Talk about the control interface
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32Prop.png" alt="LabView control interface 3/2 Proportional" width="600">
@@ -255,6 +277,8 @@ TODO Talk about the control interface
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control22Prop.png" alt="Proportional PWM driver with PID controller" width="600">
 </p>
 TODO Add side by side version of a LabVIEW file
+
+TODO Add arduino code or something for that option
 
 TODO Talk about the control interface
 <p align="center">
@@ -270,7 +294,7 @@ As seen in the image below, the driver interfaces with the myRIO via the two IDC
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOSideView.png" alt="MyRIO Side View" width="600">
 </p>
 
-## Electrical Design
+## Electrical Design (PneuSoRD)
 Each module has been designed to maximise the variety of devices which can be driven. The following shows the implementation of the three drive designs and the feedback sensor electronics.  
 <!-- <div class="text-red mb-2"> -->
 Red - 26 On/Off Drives  
@@ -317,6 +341,10 @@ TODO Add close up image of section showing wiring
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOCloseUpSensor.png" alt="MyRIO Sensors" width="600">
 </p>
+
+
+## Arduino Shield
+TODO add diagram of shield and overview
 
 ## Pin Mapping
 The pin mapping for the PneuSoRD integrates the two MXP connectors of the MyRIO. The table below presents the pin mapping as seen in the orientation of the PneuSoRD driver. This is also the orientation of the pins of the breakout header.
@@ -366,3 +394,6 @@ The pin mapping for the PneuSoRD integrates the two MXP connectors of the MyRIO.
 | MXP B Pin 6  | AGND          | NC   | MXP B Pin 5  | AI1           | AI2  |
 | MXP B Pin 4  | AO1           | NC   | MXP B Pin 3  | AI0           | AI1  |
 | MXP B Pin 2  | AO0           | NC   | MXP B Pin 1  | +5V           | 5V   |
+
+TODO add pin diagram for outgoing headers (valves/motors), add diagram for sensors incl arduino shield
+
