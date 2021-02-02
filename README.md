@@ -137,10 +137,10 @@ The table below provides a comparison of pneumatic systems for soft robotic appl
 
 | Setup    | Cost   | Lifetime  | Accuracy | Control | 
 | ------ | ------ | ------ | ------ | ------ |
-| 3/2 on-off valve | Low | Low | Medium | Low |
-| 2/2 on-off valves | Medium | Medium | Medium | High |
-| 3/2 prop. valve | High | High | High | Low |
-| 2/2 prop. valves | High | High | High | High |
+| 3/2 on-off valve | Low (~$50) | Low | Medium | Low |
+| 2/2 on-off valves | Medium (~$90) | Medium | Medium | High |
+| 3/2 prop. valve | High (~$220) | High | High | Medium |
+| 2/2 prop. valves | High (~$240) | High | High | Medium |
 
 # LabVIEW Overview
 LabVIEW offers a graphical programming approach that helps you visualize every aspect of your application, including hardware configuration, measurement data, and debugging. This visualization makes it simple to design and develop custom engineering user interfaces.
