@@ -205,7 +205,7 @@ When combined with a second relay block, a three state hysteresis window can be 
 
 ## Rate Limiter Block
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RateLimiterBlock.png" alt="LabView Rate Limiter Block" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-RateLimitBlock.png" alt="LabView Rate Limiter Block" width="600">
 </p>
 
 This block limits the rate of change over time of the input signal. The input to this block is the signal to be rate limited. The output to this block is the rate limited signal.
@@ -387,6 +387,9 @@ TODO Add close up image of section showing wiring
 
 ## Arduino Shield
 TODO add diagram of shield and overview
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/DueAdapter.png" alt="Arduino Shield Render" width="600">
+</p>
 
 ## Pin Mapping
 The pin mapping for the PneuSoRD integrates the two MXP connectors of the MyRIO. The table below presents the pin mapping as seen in the orientation of the PneuSoRD driver. This is also the orientation of the pins of the breakout header.
