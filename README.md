@@ -11,6 +11,48 @@ TODO  Add link to paper
 
 TODO add quickstart guide
 
+The following guide is for the example [3 Way 2 Position](LabVIEW/3Way_2Position/OnOffControl_32Valve.vi) as seen in [On/Off 3/2](##On/Off-3/2).
+
+### Step 1 - Pneumatic Connection
+** Connect the components as seen in [On/Off 3/2](##On/Off-3/2).
+
+### Step 2 - Pump/Valve Connections
+** Wiring for pump. 
+** Wiring for valves. Any port can be used, however for this example SO1
+** Select the correct power header for each device
+** Wall wart
+
+### Step 3 - Sensor Input
+** Sensor connections. Any port can be used, however for this example AI1 Pump, AI2 Valve.
+
+### Step 4 - LabVIEW Configuration
+** For each device configure the correct myRIO port.
+
+Double clicking on the IO block for each device allows the user to configure the pin which the block reads/writes to and from. Set the pump, valve and sensors to use the myRIO pins which collorate to the driver pins. See tables [MXP A](###MXP-A) and [MXP B](###MXP-B) for the correct pin.
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png" alt="3/2 on-off pump configuration" width="600">
+</p>
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png" alt="3/2 on-off valve configuration" width="600">
+</p>
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png" alt="3/2 on-off sensor" width="600">
+</p>
+
+### Step 5 - Running the LabVIEW vi
+Once the configuration is complete, the system is ready to test. Use the *run* and *Abort Execution* buttons to control the device. 
+
+The "Setpoint Receiver" slider allows the resivour pressure (kPa) to be adjusted. The limit for this pressure is dependent on the resivour and pump used.
+
+The second slider "Setpoint Actuator" adjusts the desired actuator pressure. 
+
+For each slider there is an associated "Performance" guage. The *red* needle displays the setpoint direct from the slider and the *black* needle displays the measured pressure.
+
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32OnOff.png" alt="LabView control interface" width="600">
+</p>
+
+
 Table of contents
 =================
 
