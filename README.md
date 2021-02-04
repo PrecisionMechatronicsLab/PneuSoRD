@@ -39,6 +39,10 @@ Double clicking on the IO block for each device allows the user to configure the
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png" alt="3/2 on-off sensor" width="600">
 </p>
 
+| [![3/2 on-off pump configuration](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD) | [![3/2 on-off valve configuration](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD) | [![3/2 on-off sensor](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD)|
+|:---:|:---:|:---:|
+| 3/2 on-off pump configuration | 3/2 on-off valve configuration | 3/2 on-off sensor |
+
 ### Step 5 - Running the LabVIEW vi
 Once the configuration is complete, the system is ready to test. Use the *run* and *Abort Execution* buttons to control the device. 
 
