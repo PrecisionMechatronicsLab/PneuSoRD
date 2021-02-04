@@ -28,7 +28,7 @@ The following guide is for the example [3 Way 2 Position](LabVIEW/3Way_2Position
 ### Step 4 - LabVIEW Configuration
 ** For each device configure the correct myRIO port.
 
-Double clicking on the IO block for each device allows the user to configure the pin which the block reads/writes to and from. Set the pump, valve and sensors to use the myRIO pins which collorate to the driver pins. See tables [MXP A](###MXP-A) and [MXP B](###MXP-B) for the correct pin.
+Double clicking on the IO block for each device allows the user to configure the pin which the block reads/writes to and from. Set the pump, valve and sensors to use the myRIO pins which collorate to the driver pins. See tables [MXP A](#MXP-A) and [MXP B](#MXP-B) for the correct pin.
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png" alt="3/2 on-off pump configuration" width="600">
 </p>
@@ -61,46 +61,46 @@ Table of contents
    * [Quickstart Guide](#Quickstart-Guide)
    * [PneuSoRD Driver](#PneuSoRD-Driver)
    * [Pnuematic Overview](#Pnuematic-Overview)
-	 * [Pump/Compressor ](##Pump/Compressor )
-	 * [3/2 Valve Configuration](##3/2-Valve-Configuration)
-	 * [3/3 Valve Configuration](##3/3-Valve-Configuration)
-	 * [2x 2/2 Valve Configuration](##2x-2/2-Valve-Configuration)
-	 * [Design Overview](##Design-Overview)
+	 * [Pump/Compressor ](#Pump/Compressor )
+	 * [3/2 Valve Configuration](#3/2-Valve-Configuration)
+	 * [3/3 Valve Configuration](#3/3-Valve-Configuration)
+	 * [2x 2/2 Valve Configuration](#2x-2/2-Valve-Configuration)
+	 * [Design Overview](#Design-Overview)
    * [LabVIEW Overview](#LabVIEW-Overview)
-	 * [Main Loop](##Main-Loop)
-	 * [Analog Input](##Analog-Input)
-	 * [PWM](##PWM)
-	 * [Simulated Squarewave](##Simulated-Squarewave)
-	 * [Digital Write](##Digital-Write)
-	 * [PID Block](##PID-Block)
-	 * [Relay Block](##Relay-Block)
-	 * [Rate Limiter Block](##Rate-Limiter-Block)
+	 * [Main Loop](#Main-Loop)
+	 * [Analog Input](#Analog-Input)
+	 * [PWM](#PWM)
+	 * [Simulated Squarewave](#Simulated-Squarewave)
+	 * [Digital Write](#Digital-Write)
+	 * [PID Block](#PID-Block)
+	 * [Relay Block](#Relay-Block)
+	 * [Rate Limiter Block](#Rate-Limiter-Block)
    * [Control Implementations](#Control-Implementations)
-	 * [Pump Control](##Pump-Control)
-	 * [On/Off 3/2](##On/Off-3/2)
-		 * [Bang-Bang](###Bang-Bang)
-		 * [PID](###PID)
+	 * [Pump Control](#Pump-Control)
+	 * [On/Off 3/2](#On/Off-3/2)
+		 * [Bang-Bang](#Bang-Bang)
+		 * [PID](#PID)
 	 * [On/Off 2x 2/2](##On/Off-2x-2/2)
-		 * [Bang-Bang](###Bang-Bang)
-		 * [PID](###PID)
-	 * [Proportional 3/2](##Proportional-3/2)
-	 * [Proportional 2x 2/2](##Proportional-2x-2/2)
+		 * [Bang-Bang](#Bang-Bang)
+		 * [PID](#PID)
+	 * [Proportional 3/2](#Proportional-3/2)
+	 * [Proportional 2x 2/2](#Proportional-2x-2/2)
    * [Hardware Overview](#Hardware-Overview)
-	 * [Electrical Design (PneuSoRD)](##Electrical-Design-(PneuSoRD))
-		 * [Motor/Proportional Drive](###Motor/Proportional-Drive)
-		 * [On/Off Drive](###On/Off-Drive)
-		 * [Sensor Input](###Sensor-Input)
-	 *  [Arduino Sheild](##Arduino-Shield)
-	 * [Pin Mapping](##Pin-Mapping)
-		 * [MXP A](###MXP-A)
-		 * [MXP B](###MXP-B)
+	 * [Electrical Design (PneuSoRD)](#Electrical-Design-(PneuSoRD))
+		 * [Motor/Proportional Drive](#Motor/Proportional-Drive)
+		 * [On/Off Drive](#On/Off-Drive)
+		 * [Sensor Input](#Sensor-Input)
+	 *  [Arduino Sheild](#Arduino-Shield)
+	 * [Pin Mapping](#Pin-Mapping)
+		 * [MXP A](#MXP-A)
+		 * [MXP B](#MXP-B)
 <!--te-->
 
 # PneuSoRD Driver and Shield
 The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
 
 TODO Add more information regarding build
-Cost
+Cost per unit for 20 units 
 etc
 
 # Pnuematic Overview
@@ -442,3 +442,5 @@ The pin mapping for the PneuSoRD integrates the two MXP connectors of the MyRIO.
 
 TODO add pin diagram for outgoing headers (valves/motors), add diagram for sensors incl arduino shield
 
+# Useful Links
+Arduino PID Library - https://playground.arduino.cc/Code/PIDLibrary/
