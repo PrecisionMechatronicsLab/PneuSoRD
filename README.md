@@ -29,17 +29,8 @@ The following guide is for the example [3 Way 2 Position](LabVIEW/3Way_2Position
 ** For each device configure the correct myRIO port.
 
 Double clicking on the IO block for each device allows the user to configure the pin which the block reads/writes to and from. Set the pump, valve and sensors to use the myRIO pins which collorate to the driver pins. See tables [MXP A](#MXP-A) and [MXP B](#MXP-B) for the correct pin.
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png" alt="3/2 on-off pump configuration" width="600">
-</p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png" alt="3/2 on-off valve configuration" width="600">
-</p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png" alt="3/2 on-off sensor" width="600">
-</p>
 
-| [![3/2 on-off pump configuration](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD) | [![3/2 on-off valve configuration](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD) | [![3/2 on-off sensor](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD)|
+| [![3/2 on-off pump configuration](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png) | [![3/2 on-off valve configuration](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png) | [![3/2 on-off sensor](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png)|
 |:---:|:---:|:---:|
 | 3/2 on-off pump configuration | 3/2 on-off valve configuration | 3/2 on-off sensor |
 
@@ -104,8 +95,7 @@ Table of contents
 The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
 
 TODO Add more information regarding build
-Cost per unit for 20 units 
-etc
+Cost per unit for 20 units \~$160
 
 # Pnuematic Overview
 ## Pump/Compressor 
