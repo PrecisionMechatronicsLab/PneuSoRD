@@ -437,29 +437,29 @@ The pin mapping for the PneuSoRD integrates the two MXP connectors of the MyRIO.
 ### Arduino Due Shield
 | MCU Pin | Arduino Pin | PneuSoRD Pin |
 | ------ | ------ | ------ |
-| PA16 | A0  | A1  |
-| PA24 | A1  | A2  |
-| PA23 | A2  | A3  |
-| PA22 | A3  | A4  |
-| PA6  | A4  | A5  |
-| PA4  | A5  | A6  |
-| PA3  | A6  | A7  |
-| PA2  | A7  | A8  |
-| ------ | ------ | ------ |
+| PA16 | A0  | A1    |
+| PA24 | A1  | A2    |
+| PA23 | A2  | A3    |
+| PA22 | A3  | A4    |
+| PA6  | A4  | A5    |
+| PA4  | A5  | A6    |
+| PA3  | A6  | A7    |
+| PA2  | A7  | A8    |
+|      |     |       |
 | PB17 | A8  | \*A9  |
 | PB18 | A9  | \*A10 |
 | PB19 | A10 | \*A11 |
 | PB20 | A11 | \*A12 |
-| PB15 |     | NC  |
-| PB16 |     | NC  |
-| PA1  |     | NC  |
-| PA0  |     | NC  |
+| PB15 |     | NC    |
+| PB16 |     | NC    |
+| PA1  |     | NC    |
+| PA0  |     | NC    |
 
 \*Items on adapter PCB
 
-| MCU Pin | Arduino Pin | PneuSoRD Pin |
-| ------ | ------ | ------ |
-| +5V  | | NC | +5V | | NC |
+| MCU Pin | Arduino Pin | PneuSoRD Pin | MCU Pin | Arduino Pin | PneuSoRD Pin |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| +5V  | +5V | NC   | +5V  | +5V | NC   |
 | PB26 | D22 | SO1  | PA14 | D23 | SO2  |
 | PA15 | D24 | SO3  | PD0  | D25 | SO4  |
 | PD1  | D26 | SO5  | PD2  | D27 | SO6  |
