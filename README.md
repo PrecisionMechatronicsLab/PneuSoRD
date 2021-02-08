@@ -434,7 +434,49 @@ The pin mapping for the PneuSoRD integrates the two MXP connectors of the MyRIO.
 | MXP B Pin 4  | AO1           | NC   | MXP B Pin 3  | AI0           | AI1  |
 | MXP B Pin 2  | AO0           | NC   | MXP B Pin 1  | +5V           | 5V   |
 
-TODO add pin diagram for outgoing headers (valves/motors), add diagram for sensors incl arduino shield
+### Arduino Due Shield
+| MCU Pin | Arduino Pin | PneuSoRD Pin |
+| ------ | ------ | ------ |
+| PA16 | A0  | A1  |
+| PA24 | A1  | A2  |
+| PA23 | A2  | A3  |
+| PA22 | A3  | A4  |
+| PA6  | A4  | A5  |
+| PA4  | A5  | A6  |
+| PA3  | A6  | A7  |
+| PA2  | A7  | A8  |
+| ------ | ------ | ------ |
+| PB17 | A8  | \*A9  |
+| PB18 | A9  | \*A10 |
+| PB19 | A10 | \*A11 |
+| PB20 | A11 | \*A12 |
+| PB15 |     | NC  |
+| PB16 |     | NC  |
+| PA1  |     | NC  |
+| PA0  |     | NC  |
+
+\*Items on adapter PCB
+
+| MCU Pin | Arduino Pin | PneuSoRD Pin |
+| ------ | ------ | ------ |
+| +5V  | | NC | +5V | | NC |
+| PB26 | D22 | SO1  | PA14 | D23 | SO2  |
+| PA15 | D24 | SO3  | PD0  | D25 | SO4  |
+| PD1  | D26 | SO5  | PD2  | D27 | SO6  |
+| PD3  | D28 | SO7  | PD6  | D29 | SO8  |
+| PD9  | D30 | SO9  | PA7  | D31 | SO10 |
+| PD10 | D32 | SO11 | PC1  | D33 | SO12 |
+| PC2  | D34 | SO13 | PC3  | D35 | P1   |
+| PC4  | D36 | SO14 | PC5  | D37 | P2   |
+| PC6  | D38 | SO15 | PC7  | D39 | P3   |
+| PC8  | D40 | SO16 | PC9  | D41 | P4   |
+| PA19 | D42 | P5   | PA20 | D43 | SO17 |
+| PC19 | D44 | SO18 | PC18 | D45 | MTR  |
+| PC17 | D46 | SO19 | PC16 | D47 | SO20 |
+| PC15 | D48 | SO21 | PC14 | D49 | SO22 |
+| PC13 | D50 | SO23 | PC12 | D51 | SO24 |
+| PB21 | D52 | SO25 | PB14 | D53 | SO26 |
+| GND  | GND | GND  | GND  | GND | GND  |
 
 # Useful Links
 Arduino PID Library - https://playground.arduino.cc/Code/PIDLibrary/
