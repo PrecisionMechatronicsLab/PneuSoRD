@@ -11,6 +11,13 @@ struct pressureSensor_t {
 int numSensors = 12;
 pressureSensor_t pressureSensor[numSensors] = {};
 
+
+struct controllerParams_t{
+	double Kp;
+	double Ki;
+	double Kd;
+};
+
 void setup() {
 	// PWM set-up on pins
 	// | PC3  | D35 | P1   |
@@ -54,6 +61,9 @@ void setup() {
 	pressureSensor[9] = {A9, 406, 400};
 	pressureSensor[10] = {A10, 406, 400};
 	pressureSensor[11] = {A11, 406, 400};
+
+	
+	PID controller1(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
 }
 
 void loop() {
