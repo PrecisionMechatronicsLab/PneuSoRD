@@ -127,6 +127,8 @@ DirectoryIndex index.htm
 		<Item Name="Controller_2_2_BangBang.vi" Type="VI" URL="../Controller_2_2_BangBang.vi"/>
 		<Item Name="Relay_2_State.vi" Type="VI" URL="../Subsystems/Relay_2_State.vi"/>
 		<Item Name="Relay_3_State.vi" Type="VI" URL="../Subsystems/Relay_3_State.vi"/>
+		<Item Name="Graph_2_Signal.vi" Type="VI" URL="../Subsystems/Graph_2_Signal.vi"/>
+		<Item Name="Graph_3_Signal.vi" Type="VI" URL="../Subsystems/Graph_3_Signal.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
