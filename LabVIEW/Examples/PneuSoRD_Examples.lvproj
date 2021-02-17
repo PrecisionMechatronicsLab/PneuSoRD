@@ -129,6 +129,7 @@ DirectoryIndex index.htm
 		<Item Name="Relay_3_State.vi" Type="VI" URL="../Subsystems/Relay_3_State.vi"/>
 		<Item Name="Graph_2_Signal.vi" Type="VI" URL="../Subsystems/Graph_2_Signal.vi"/>
 		<Item Name="Graph_3_Signal.vi" Type="VI" URL="../Subsystems/Graph_3_Signal.vi"/>
+		<Item Name="Signal_Generator.vi" Type="VI" URL="../Subsystems/Signal_Generator.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -292,6 +293,7 @@ DirectoryIndex index.htm
 				<Item Name="subSigGeneratorBlock.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subSigGeneratorBlock.vi"/>
 				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
 				<Item Name="NILVSim.dll" Type="Document" URL="/&lt;vilib&gt;/Simulation/Implementation/shared/NILVSim.dll"/>
+				<Item Name="subUserDefinedVals.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateArbSignalBlock.llb/subUserDefinedVals.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

@@ -96,6 +96,8 @@ The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO
 
 TODO Add more information regarding build
 Cost per unit for 20 units \~$160
+https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/PCB_PneuSoRD/PCB_IC/PneuSoRD-BOM.xlsx
+https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/PCB_DueAdapter/PCB_DueAdapterL2/Due-BOM.xlsx
 
 # Pnuematic Overview
 ## Pump/Compressor 
