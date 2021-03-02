@@ -130,6 +130,9 @@ DirectoryIndex index.htm
 		<Item Name="Graph_2_Signal.vi" Type="VI" URL="../Subsystems/Graph_2_Signal.vi"/>
 		<Item Name="Graph_3_Signal.vi" Type="VI" URL="../Subsystems/Graph_3_Signal.vi"/>
 		<Item Name="Signal_Generator.vi" Type="VI" URL="../Subsystems/Signal_Generator.vi"/>
+		<Item Name="Untitled 1.vi" Type="VI" URL="../Subsystems/Untitled 1.vi"/>
+		<Item Name="RateLimit.vi" Type="VI" URL="../Subsystems/RateLimit.vi"/>
+		<Item Name="Controller_3_2_PID_Hand.vi" Type="VI" URL="../Controller_3_2_PID_Hand.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
