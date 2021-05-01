@@ -19,7 +19,7 @@ Connect the components as seen in Fig [On/Off 3/2](##On/Off-3/2). The specific f
 ### Step 2 - Pump/Valve Connections
 Connect the two leads of the DC pump/motor to the Motor +- screw terminals.
 For the 3/2 example connect the two leads of the valve to the +- of the desired channel, the example code utilises SO1, however this can be changed.
-Connect the wall wart or power supply to the V1 power input of the driver via the DC barrel jack or the screw terminals. This supply should be selected based on the operating voltage of the motor/valves used. If these are the same, only one supply is needed, if they are different a second power supply can be connected to the V2 DC barrel jack or screw terminals. 
+Connect the wall wart or power supply to the V2 power input of the driver via the DC barrel jack or the screw terminals. This supply should be selected based on the operating voltage of the motor/valves used. If these are the same, only one supply is needed, if they are different a second power supply can be connected to the V1 DC barrel jack or screw terminals. 
 Using a pin jumper connect each devices controller to the appropriate power supply for that device. The right pin is used for V1 and the left for V2.
 
 ** Wiring for pump. 
