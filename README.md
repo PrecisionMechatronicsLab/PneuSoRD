@@ -22,15 +22,14 @@ For the 3/2 example connect the two leads of the valve to the +- of the desired 
 Connect the wall wart or power supply to the V2 power input of the driver via the DC barrel jack or the screw terminals. This supply should be selected based on the operating voltage of the motor/valves used. If these are the same, only one supply is needed, if they are different a second power supply can be connected to the V1 DC barrel jack or screw terminals. 
 Using a pin jumper connect each devices controller to the appropriate power supply for that device. The right pin is used for V1 and the left for V2.
 
-** Wiring for pump. 
-** Wiring for valves. Any port can be used, however for this example SO1
-** Select the correct power header for each device
-** Wall wart
+TODO Add note regarding requiring two power supplys for Rev 1 of the design
 
 ### Step 3 - Sensor Input
+TODO
 ** Sensor connections. Any port can be used, however for this example AI1 Pump, AI2 Valve.
 
 ### Step 4 - LabVIEW Configuration
+TODO
 ** For each device configure the correct myRIO port.
 
 Double clicking on the IO block for each device allows the user to configure the pin which the block reads/writes to and from. Set the pump, valve and sensors to use the myRIO pins which collorate to the driver pins. See tables [MXP A](#MXP-A) and [MXP B](#MXP-B) for the correct pin.
@@ -48,6 +47,7 @@ The second slider "Setpoint Actuator" adjusts the desired actuator pressure.
 
 For each slider there is an associated "Performance" guage. The *red* needle displays the setpoint direct from the slider and the *black* needle displays the measured pressure.
 
+TODO Add picture here
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32OnOff.png" alt="LabView control interface" width="600">
 </p>
@@ -99,12 +99,16 @@ Table of contents
 # PneuSoRD Driver and Shield
 The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
 
-TODO Add more information regarding build
+TODO Add more information regarding build - brief summary of costs
 Cost per unit for 20 units \~$160
+
+TODO Check these docs
 https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/PCB_PneuSoRD/PCB_IC/PneuSoRD-BOM.xlsx
 https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/PCB_DueAdapter/PCB_DueAdapterL2/Due-BOM.xlsx
 
 # Pnuematic Overview
+
+TODO Try and add set size white boxes around the images
 ## Pump/Compressor 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-pump.png" alt="Air compressor with reservoir and pressure sensor" width="300">
