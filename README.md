@@ -1,3 +1,10 @@
+<!-- 
+- Finish github readme
+- Add warning regarding provision
+- Link Paypal as shop to github
+- Read for spelling
+ -->
+
 # Overview
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/OverviewDiagram.png" alt="Overview of the Pneumatic Soft Robotics Controller (PneuSoRD), including the electronics driver board and National Instruments myRIO controller, which is connected to a single pump and air receiver, up to 5 proportional valves, and 26 on-off valves. Soft robotic glove reproduced with permission from [35]. Copyright 2019, Mary Ann Liebert, Inc." width="600">
@@ -5,11 +12,20 @@
 
 The Pneumatic Soft Robotics Driver (PneuSoRD) as shown in Fig. 2 is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves Fig. 1a-c with single or multiple solenoids which each take a binary input and proportional valves Fig. 1d which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules can be driven by either a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW or an Arduino DUE.
 
-TODO  Add link to paper
+A link to the paper can be found [here]: TODO <!-- http://www.reddit.com --> 
+
+PneuSoRD is available to be purchased from: **Temporarily unavailable**
+<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="HB4DUWE5M24YY">
+<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+</form> -->
+
+
+**NOTE:** rev. 0.2 boards (unmarked revision) require the primary voltage input to be 7-12V. The secondary input can be used 7-25V.
 
 # Quickstart Guide
-
-TODO add quickstart guide
 
 The following guide is for the example [3 Way 2 Position](LabVIEW/3Way_2Position/OnOffControl_32Valve.vi) as seen in [On/Off 3/2](##On/Off-3/2).
 
@@ -34,9 +50,22 @@ TODO
 
 Double clicking on the IO block for each device allows the user to configure the pin which the block reads/writes to and from. Set the pump, valve and sensors to use the myRIO pins which collorate to the driver pins. See tables [MXP A](#MXP-A) and [MXP B](#MXP-B) for the correct pin.
 
-| [![3/2 on-off pump configuration](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png) | [![3/2 on-off valve configuration](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png) | [![3/2 on-off sensor](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png)](https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png)|
+|
+<p>
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png" alt="LabView Control32OnOffPump interface" width="600">
+</p>
+|
+<p>
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png" alt="LabView Control32OnOffValve interface" width="600">
+</p>
+|
+<p>
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png" alt="LabView Control32OnOffSensor interface" width="600">
+</p>
+|
 |:---:|:---:|:---:|
 | 3/2 on-off pump configuration | 3/2 on-off valve configuration | 3/2 on-off sensor |
+
 
 ### Step 5 - Running the LabVIEW vi
 Once the configuration is complete, the system is ready to test. Use the *run* and *Abort Execution* buttons to control the device. 
@@ -336,6 +365,8 @@ TODO Talk about the control interface
 The driver allows for the control of up to 31 valves for use in a multitude of applications. The number of sensor inputs is limited according the maximum number of analog inputs of myRIO. Consequently, 8 sensors input headers can be used to perform independent feedback control on 8 chambers. Note that more chambers can be actuated if they are allowed to share the same pressure values. 
 An electrical PWM is used to drivethe proportional valves through a buck converter, which produces the required DC voltage. Where as a pneumatic PWM is produces by switching on and off the supply to the On/Off valves to produce the required driving signal. The PneuSoRD has two power inputs each of which can supply an operating voltage 7-25V. Two inputs were chosen to maximise the range or valves that could be driven. The primary input is used to power the 5V regulator and is required for the board's protection functionality. Whilst the secondary input is only required if a second voltage level is needed.
 
+**NOTE:** rev. 0.2 boards (unmarked revision) require the primary voltage input to be 7-12V. The secondary input can be used 7-25V.
+
 As seen in the image below, the driver interfaces with the myRIO via the two IDC connectors on the left hand side of the myRIO. 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOSideView.png" alt="MyRIO Side View" width="600">
@@ -362,32 +393,32 @@ Orange - Sensor Inputs
 Pink - Expansion Headers  
 <!-- </div> -->
 
-<p align="center">
+<!-- <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOTopViewBoxes.png" alt="MyRIO Top View" width="600">
-</p>
+</p> -->
 
 ### Motor/Proportional Drive
 The PneuSoRD has 6 Proportional Drive modules. The motor driver is sized for a peak current capacity up to 1.4A. This driver is designed for driving dc motor pumps which typically have a current range of 500mA to 1A. The 5 proportional drivers are sized for a peak current capacity up to 700mA. This driver is designed for driving proportional valves which typically have a current range of 200 to 500mA. The motor and proportional valve drivers are based off a synchronous rectifier buck converters. The buck converters switch is driven by a 40-200kHz PWM signal with a variable duty cycle direct from the myRIO. The switch is a DRV88703.6A, a half-bridge motor driver and was selected due to its variety of protection capabilities as outlined in Section III-D. Each drive can be supplied by either of the two onboard power inputs via a selectable voltage header on each module. Current regulation is achieved based on the analog input VREF and the voltage on the ISEN pin, which is proportional to motor current through an external sensing resistor. This is adjustable via the Rsen resistor and can provide a range of current limits depending on the application. The motor drive can supply a continuous 1.4A with an adjustable peak rating of 2.5A (adjustable up to 3.6 A). The remaining proportional drives can supply a continuous 500mA with an adjustable peak rating of 700mA
 (adjustable up to 700mA).
-TODO Add close up image of section showing wiring
+<!-- TODO Add close up image of section showing wiring
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOCloseUpProp.png" alt="MyRIO Proportional Drive" width="600">
-</p>
+</p> -->
 
 ### On/Off Drive
 Since On/Off valves can be driven via a simple digital signal, the PneuSoRD takes advantage of the 26 Digital Input/Output (DIO) pins on the myRIO. The TPS1H000 is a fully protected single channel high-side power switch with an integrated power Field-Effect Transistor (FET). An adjustable current limit via the Rsen resistor improves system reliability by limiting the inrush or overload current. The high accuracy of the current limit improves overload protection. The trip delay capacitor has been selected to minimise the trip time if a fault event occurs. A light emitting diode is connected to the common collector fault pin, this provides user feedback if a fault event were to occur.
 Each drive can be supplied by either of the two onboard power inputs via a selectable voltage header on each module. The On/Off drives can supply a continuous 500mA.
-TODO Add close up image of section showing wiring
+<!-- TODO Add close up image of section showing wiring
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOCloseUpOnOff.png" alt="MyRIO OnOff Drive" width="600">
-</p>
+</p> -->
 
 ### Sensor Input
 A total of 8 sensor input headers are included on the PneuSoRD. These are designed to provide each sensor with 5V. Primarily, this input is designed for 0-5V sensors that can be read via the ADC input of the myRIO. An optional resistor can be added to allow 4-20mA style sensors to be used.
-TODO Add close up image of section showing wiring
+<!-- TODO Add close up image of section showing wiring
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOCloseUpSensor.png" alt="MyRIO Sensors" width="600">
-</p>
+</p> -->
 
 
 ## Arduino Shield
