@@ -9,7 +9,7 @@
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/OverviewDiagram.png" alt="Overview of the Pneumatic Soft Robotics Controller (PneuSoRD), including the electronics driver board and National Instruments myRIO controller, which is connected to a single pump and air receiver, up to 5 proportional valves, and 26 on-off valves. Soft robotic glove reproduced with permission from [35]. Copyright 2019, Mary Ann Liebert, Inc." width="600">
 </p>
 
-The Pneumatic Soft Robotics Driver (PneuSoRD) as shown in Fig. 2 is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves Fig. 1a-c with single or multiple solenoids which each take a binary input and proportional valves Fig. 1d which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules can be driven by either a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW or an Arduino DUE.
+The Pneumatic Soft Robotics Driver (PneuSoRD) is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves with single or multiple solenoids which each take a binary input and proportional valves which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules can be driven by either a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW or an Arduino DUE.
 
 A link to the paper can be found [here]: <!-- http://www.reddit.com  TODO -->
 
@@ -63,15 +63,17 @@ For each device configure the correct myRIO port.
 Double clicking on the IO block for each device allows the user to configure the pin which the block reads/writes to and from. Set the pump, valve and sensors to use the myRIO pins which collorate to the driver pins. See tables [MXP A](#MXP-A) and [MXP B](#MXP-B) for the correct pin.
 
 
-<p>
+<p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png" alt="LabView Control32OnOffPump interface" width="400">
 </p>
 3/2 on-off pump configuration
-<p>
+
+<p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png" alt="LabView Control32OnOffValve interface" width="400">
 </p>
 3/2 on-off valve configuration
-<p>
+
+<p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png" alt="LabView Control32OnOffSensor interface" width="400">
 </p>
 3/2 on-off sensor
@@ -257,6 +259,7 @@ The accumulator pressure requires closed-loop control to provide a constant sour
 ### Bang-Bang
 
 For the system with a 3/2 on-off valve, the bang-bang controller is implemented with two states, which are:
+
 P < P_{ref} - h  
 P > P_{ref} + h 
 
@@ -281,11 +284,15 @@ For the system with two 2/2 on-off valves, the first valve (control **u_1**) is 
 The bang-bang controller, three states can be used. In the first state, valve 1 is used for charging the actuator while valve 2 is blocked, i.e. **u_1 = 1** and **u_2 = 0**. In the second state, both valves are blocked and no flow is allowed from the receiver or into the atmosphere, i.e. **u_1 = 0** and **u_2 = 0**. Finally, in the third state, valve 2 is used to discharge the actuator into the atmosphere while valve 1 is blocked, i.e. **u_1 = 0** and **u_2 = 1**. These conditions can be implemented using a case structure (state machine) with three states or by considering the logic below with two relays.
 
 Valve 1
+
 	Switch on: P_{ref} - P > h
+
 	Switch off: P_{ref} - P = 0
 
 Valve 2
+
 	Switch on: P_{ref} - P < -h
+
 	Switch off: P_{ref} - P = 0
 
 <p align="center">
@@ -341,9 +348,9 @@ Orange - Sensor Inputs
 Pink - Expansion Headers  
 <!-- </div> -->
 
-<!-- <p align="center">
+<p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOTopViewBoxes.png" alt="MyRIO Top View" width="600">
-</p> -->
+</p>
 
 ### Motor/Proportional Drive
 The PneuSoRD has 6 Proportional Drive modules. The motor driver is sized for a peak current up to 1.4A. This driver is designed for DC motor pumps that typically require a current of 500mA to 1A. This output could also be used to drive a logic signal for a larger pump. The 5 proportional drivers are sized for a peak current capacity up to 700mA. This driver is designed for driving proportional valves that typically require 200mA to 500mA.
