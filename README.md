@@ -1,8 +1,7 @@
-<!-- 
-- Finish github readme
-- Add warning regarding provision
-- Link Paypal as shop to github
-- Read for spelling
+<!-- TODO 
+- Add image backgrounds
+- Check the alternate text on images
+- Add paypal link
  -->
 
 # Overview
@@ -12,7 +11,7 @@
 
 The Pneumatic Soft Robotics Driver (PneuSoRD) as shown in Fig. 2 is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves Fig. 1a-c with single or multiple solenoids which each take a binary input and proportional valves Fig. 1d which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules can be driven by either a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW or an Arduino DUE.
 
-A link to the paper can be found [here]: TODO <!-- http://www.reddit.com --> 
+A link to the paper can be found [here]: <!-- http://www.reddit.com  TODO -->
 
 PneuSoRD is available to be purchased from: **Temporarily unavailable**
 <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -25,47 +24,57 @@ PneuSoRD is available to be purchased from: **Temporarily unavailable**
 
 **NOTE:** rev. 0.2 boards (unmarked revision) require the primary voltage input to be 7-12V. The secondary input can be used 7-25V.
 
+## PneuSoRD Driver and Shield
+The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
+
+<!-- TODO Add more information regarding build - brief summary of costs
+Cost per unit for 20 units \~$160 -->
+
+<!-- TODO Check these docs -->
+https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/PCB_PneuSoRD/PCB_IC/PneuSoRD-BOM.xlsx
+https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/PCB_DueAdapter/PCB_DueAdapterL2/Due-BOM.xlsx
+
+
 # Quickstart Guide
 
 The following guide is for the example [3 Way 2 Position](LabVIEW/3Way_2Position/OnOffControl_32Valve.vi) as seen in [On/Off 3/2](##On/Off-3/2).
 
 ### Step 1 - Pneumatic Connection
-Connect the components as seen in Fig [On/Off 3/2](##On/Off-3/2). The specific fittings and components will vary depending on the valves and sensors available. 
+Connect the components as seen in Fig [On/Off 3/2](##On/Off-3/2). The specific fittings and components will vary depending on the valves and sensors used in your setup. 
 
 ### Step 2 - Pump/Valve Connections
 Connect the two leads of the DC pump/motor to the Motor +- screw terminals.
+
 For the 3/2 example connect the two leads of the valve to the +- of the desired channel, the example code utilises SO1, however this can be changed.
+
 Connect the wall wart or power supply to the V2 power input of the driver via the DC barrel jack or the screw terminals. This supply should be selected based on the operating voltage of the motor/valves used. If these are the same, only one supply is needed, if they are different a second power supply can be connected to the V1 DC barrel jack or screw terminals. 
+
 Using a pin jumper connect each devices controller to the appropriate power supply for that device. The right pin is used for V1 and the left for V2.
 
-TODO Add note regarding requiring two power supplys for Rev 1 of the design
+**NOTE:** rev. 0.2 boards (unmarked revision) require the primary voltage input to be 7-12V. The secondary input can be used 7-25V.
 
 ### Step 3 - Sensor Input
-TODO
-** Sensor connections. Any port can be used, however for this example AI1 Pump, AI2 Valve.
+Connect the analogue sensor connectors to the headers marked AIX on the PCB.
+For the example 3/2 on/off AI1 Pump, AI2 Actuator.
 
 ### Step 4 - LabVIEW Configuration
-TODO
-** For each device configure the correct myRIO port.
+For each device configure the correct myRIO port.
 
 Double clicking on the IO block for each device allows the user to configure the pin which the block reads/writes to and from. Set the pump, valve and sensors to use the myRIO pins which collorate to the driver pins. See tables [MXP A](#MXP-A) and [MXP B](#MXP-B) for the correct pin.
 
-|
-<p>
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png" alt="LabView Control32OnOffPump interface" width="600">
-</p>
-|
-<p>
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png" alt="LabView Control32OnOffValve interface" width="600">
-</p>
-|
-<p>
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png" alt="LabView Control32OnOffSensor interface" width="600">
-</p>
-|
-|:---:|:---:|:---:|
-| 3/2 on-off pump configuration | 3/2 on-off valve configuration | 3/2 on-off sensor |
 
+<p>
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png" alt="LabView Control32OnOffPump interface" width="400">
+</p>
+3/2 on-off pump configuration
+<p>
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png" alt="LabView Control32OnOffValve interface" width="400">
+</p>
+3/2 on-off valve configuration
+<p>
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png" alt="LabView Control32OnOffSensor interface" width="400">
+</p>
+3/2 on-off sensor
 
 ### Step 5 - Running the LabVIEW vi
 Once the configuration is complete, the system is ready to test. Use the *run* and *Abort Execution* buttons to control the device. 
@@ -76,15 +85,20 @@ The second slider "Setpoint Actuator" adjusts the desired actuator pressure.
 
 For each slider there is an associated "Performance" guage. The *red* needle displays the setpoint direct from the slider and the *black* needle displays the measured pressure.
 
-TODO Add picture here
+<!-- TODO Talk about the control view -->
 <p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32OnOff.png" alt="LabView control interface" width="600">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOff.png" alt="3/2 on-off valve system with bang-bang controller" width="600">
+</p>
+
+<!-- TODO Talk about the interface view -->
+<p align="center">
+	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32OnOff.png" alt="LabView control interface 3/2 On/Off" width="600">
 </p>
 
 
 Table of contents
 =================
-
+<!-- TODO Update TOC -->
 <!--ts-->
    * [Overview](#Overview)
    * [Quickstart Guide](#Quickstart-Guide)
@@ -94,7 +108,6 @@ Table of contents
 	 * [3/2 Valve Configuration](#3/2-Valve-Configuration)
 	 * [3/3 Valve Configuration](#3/3-Valve-Configuration)
 	 * [2x 2/2 Valve Configuration](#2x-2/2-Valve-Configuration)
-	 * [Design Overview](#Design-Overview)
    * [LabVIEW Overview](#LabVIEW-Overview)
 	 * [Main Loop](#Main-Loop)
 	 * [Analog Input](#Analog-Input)
@@ -125,19 +138,9 @@ Table of contents
 		 * [MXP B](#MXP-B)
 <!--te-->
 
-# PneuSoRD Driver and Shield
-The PneuSoRD can be replicated via the PCB_PneuSoRD files for use with the myRIO. An optional Arduino Due shield can also be made to adapt the PneuSoRD to an Arduino Due mirco controller.
-
-TODO Add more information regarding build - brief summary of costs
-Cost per unit for 20 units \~$160
-
-TODO Check these docs
-https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/PCB_PneuSoRD/PCB_IC/PneuSoRD-BOM.xlsx
-https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/PCB_DueAdapter/PCB_DueAdapterL2/Due-BOM.xlsx
-
 # Pnuematic Overview
+An overview of pneumatic configurations.
 
-TODO Try and add set size white boxes around the images
 ## Pump/Compressor 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-pump.png" alt="Air compressor with reservoir and pressure sensor" width="300">
@@ -157,29 +160,22 @@ For the 3/2 valve system as shown above, the inlet port is connected to the comp
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-33.png" alt="Pneumatic system with a 3/3, 4/3 or 5/3 valve coniguration." width="300">
 </p>
 
-A solution to this problem includes the use of a single but expensive 3/3 (3-way, 3-position) or 5/3 (5-way, 3-position) solenoid valve shown in the figure above. 
+For the 3/3, 4/3 or 5/3 valve system as shown above, the inlet port is connected to the compressor or the receiver, the outlet port is connected to the soft actuator and the exhaust port is open to atmosphere. These valve systems have both inflating, deflating and holding modes.
 
 ## 2x 2/2 Valve Configuration
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/pneumaticdiagrams-22.png" alt="Pneumatic system with 2x 2/2 valve coniguration" width="300">
 </p>
 
-Alternatively, a system with two 2/2 (2-way, 2-position) valves can be used. In this case, the first valve is responsible for the charging process and has its inlet port connected to the compressor or the receiver and outlet port connected to the soft actuator. The second valve is responsible for the discharging process and has its inlet port connected to the soft actuator and outlet port open to atmosphere. Proportional valves outperform on-off solenoid valves in regards to tracking precision and steady-state accuracy but are 3-4 times more expensive.
-
-## Design Overview
-The table below provides a comparison of pneumatic systems for soft robotic applications. Accuracy refers to steady-state tracking and control refers to the difficulty level in the controller design and hardware requirements. Systems with 3/2 valves Fig. 1a are the most widely used due to their low price and easy implementation, especially considering their use in the fluidic control board. Systems with 2/2 valves Fig. 1c offer the advantages of reduced energy consumption and oscillation, which increases the lifetime of the valves. However, these systems are more difficult to control and are more expensive since two valves are required. Proportional valves allow for tracking precision at the expense of size and cost.
-
-| Setup    | Cost   | Lifetime  | Accuracy | Control | 
-| ------ | ------ | ------ | ------ | ------ |
-| 3/2 on-off valve | Low (~$50) | Low | Medium | Low |
-| 2/2 on-off valves | Medium (~$90) | Medium | Medium | High |
-| 3/2 prop. valve | High (~$220) | High | High | Medium |
-| 2/2 prop. valves | High (~$240) | High | High | Medium |
+For the system with two 2/2 valves, the first valve is responsible for the charging process and has its inlet port connected to the compressor or the receiver and outlet port connected to the soft actuator. The second valve is responsible for the discharging process and has its inlet port connected to the soft actuator and outlet port open to atmosphere. Proportional valves outperform on-off solenoid valves in regards to tracking precision and steady-state accuracy but are 3-4 times more expensive.
 
 # LabVIEW Overview
 LabVIEW offers a graphical programming approach that helps you visualize every aspect of your application, including hardware configuration, measurement data, and debugging. This visualization makes it simple to design and develop custom engineering user interfaces.
 
 Below is an overview of some of the major LabVIEW blocks used for a the outlined control configurations for the PneuSoRD.
+
+## Installed packages
+<!-- TODO Insert Image and list of installed labview packages for use -->
 
 ## Main Loop
 <p align="center">
@@ -218,6 +214,7 @@ This block generates a wave function defined by the user. For this application a
 This block allows the user to set the state of a single user predefined pin. The input to this block is the binary pin state. This block contains no output functionality for use in the LabVIEW environment. When used in conjunction with the Simulated Squarewave block this can be used to generate a software PWM signal.
 
 ## PID Block
+<!-- TODO Add this image -->
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabViewBlockExample-PIDBlock.png" alt="LabView PID Block" width="600">
 </p>
@@ -248,117 +245,68 @@ This block limits the rate of change over time of the input signal. The input to
 The following section decribes a control implementation for each valve type. Each of these control implementations are available in the repository above.
 
 ## Pump Control
+
+The accumulator pressure requires closed-loop control to provide a constant source pressure. This is achieved by controlling the motor voltage by regulating the duty cycle using a PID controller.
+
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-pump.png" alt="Motor driver control scheme" width="400"> 
 </p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/ControlPump.png" alt="Motor driver control scheme" width="600">
-</p>
-TODO Add side by side version of a LabVIEW file
 
-TODO Add arduino code or something for that option
-
-TODO Talk about the control interface
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/InterfacePump.png" alt="LabView control interface Pump" width="600">
-</p>
 
 ## On/Off 3/2
 ### Bang-Bang
+
+For the system with a 3/2 on-off valve, the bang-bang controller is implemented with two states, which are:
+P < P_{ref} - h  
+P > P_{ref} + h 
+
+where **P** is the measured pressure, **P_{ref}** is the reference pressure and **h** is half the size of the hysteresis band. Lower values of hysteresis result in less steady-state error but also higher switching frequency. These conditions are implemented by using a relay block in Simulink or a relay function in a subsystem in LabVIEW with "switch on point" equal to **h** and "switch off point" equal to **-h**. Note that hysteresis is introduced for the bang-bang controllers to prevent excessive switching, which is particularly beneficial for the systems with 2/2 valves.
+
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32hys.png" alt="3/2 on-off valve system with bang-bang controller" width="400"> 
 </p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOff.png" alt="3/2 on-off valve system with bang-bang controller" width="600">
-</p>
-TODO Add side by side version of a LabVIEW file
-
-TODO Add arduino code or something for that option
-
-TODO Talk about the control interface
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32OnOff.png" alt="LabView control interface 3/2 On/Off" width="600">
-</p>
 
 ### PID
+
+For the system with a 3/2 on-off valve, the PID controller is implemented by regulating the duty cycle of the PWM wave into the valve between zero and 100%, which is used to switch the valve continuously between two states at a fixed frequency, e.g. 40Hz.
+
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32pwm.png" alt="3/2 on-off valve system with PID controller" width="400"> 
 </p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32PID.png" alt="3/2 on-off valve system with PID controller" width="600">
-</p>
-TODO Add side by side version of a LabVIEW file
-
-TODO Add arduino code or something for that option
-
-TODO Talk about the control interface
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32PID.png" alt="LabView control interface" width="600">
-</p>
 
 ## On/Off 2x 2/2
+For the system with two 2/2 on-off valves, the first valve (control **u_1**) is used for charging by allowing air flow from the receiver into the actuator. The second valve (control **u_2**) is used for discharging by allowing flow from the actuator into atmosphere.
 ### Bang-Bang
+
+The bang-bang controller, three states can be used. In the first state, valve 1 is used for charging the actuator while valve 2 is blocked, i.e. **u_1 = 1** and **u_2 = 0**. In the second state, both valves are blocked and no flow is allowed from the receiver or into the atmosphere, i.e. **u_1 = 0** and **u_2 = 0**. Finally, in the third state, valve 2 is used to discharge the actuator into the atmosphere while valve 1 is blocked, i.e. **u_1 = 0** and **u_2 = 1**. These conditions can be implemented using a case structure (state machine) with three states or by considering the logic below with two relays.
+
+Valve 1
+	Switch on: P_{ref} - P > h
+	Switch off: P_{ref} - P = 0
+
+Valve 2
+	Switch on: P_{ref} - P < -h
+	Switch off: P_{ref} - P = 0
+
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22hys.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="400"> 
 </p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control22OnOff.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="600">
-</p>
-TODO Add side by side version of a LabVIEW file
 
-TODO Add arduino code or something for that option
-
-TODO Talk about the control interface
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface22OnOff.png" alt="LabView control interface 2/2 On/Off" width="600">
-</p>
 
 ### PID
+
+The PID controller is implemented by regulating the duty cycle of complementary PWM signals at a fixed frequency.
+
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22pwm.png" alt="2x 2/2 on-off valve system with PID controller" width="400"> 
 </p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control22PID.png" alt="2x 2/2 on-off valve system with PID controller" width="600">
-</p>
-TODO Add side by side version of a LabVIEW file
-
-TODO Add arduino code or something for that option
-
-TODO Talk about the control interface
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface22PID.png" alt="LabView control interface 2/2 PID" width="600">
-</p>
-
-## Proportional 3/2
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32prop.png" alt="Proportional PWM driver with hysteresis controller" width="400"> 
-</p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32Prop.png" alt="Proportional PWM driver with hysteresis controller" width="600">
-</p>
-TODO Add side by side version of a LabVIEW file
-
-TODO Add arduino code or something for that option
-
-TODO Talk about the control interface
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface32Prop.png" alt="LabView control interface 3/2 Proportional" width="600">
-</p>
 
 ## Proportional 2x 2/2
+
+For 2/2 proportional valves, the mapping from input voltage to output flow is approximately linear over the operating range. A small deadband can be implemented for each valve around the zero error point. Outside of this region a linear mapping between error and duty cycle can be produced to regulate the pressure in the system. Alternatively, the use of a bang-bang controller would not be recommended, as this would effectively be treating the proportional valve as a two state on/off valve.
+
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22prop.png" alt="Proportional PWM driver with PID controller" width="400"> 
-</p>
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control22Prop.png" alt="Proportional PWM driver with PID controller" width="600">
-</p>
-TODO Add side by side version of a LabVIEW file
-
-TODO Add arduino code or something for that option
-
-TODO Talk about the control interface
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Interface22Prop.png" alt="LabView control interface 2/2 Proportional" width="600">
 </p>
 
 # Hardware Overview
@@ -398,31 +346,22 @@ Pink - Expansion Headers
 </p> -->
 
 ### Motor/Proportional Drive
-The PneuSoRD has 6 Proportional Drive modules. The motor driver is sized for a peak current capacity up to 1.4A. This driver is designed for driving dc motor pumps which typically have a current range of 500mA to 1A. The 5 proportional drivers are sized for a peak current capacity up to 700mA. This driver is designed for driving proportional valves which typically have a current range of 200 to 500mA. The motor and proportional valve drivers are based off a synchronous rectifier buck converters. The buck converters switch is driven by a 40-200kHz PWM signal with a variable duty cycle direct from the myRIO. The switch is a DRV88703.6A, a half-bridge motor driver and was selected due to its variety of protection capabilities as outlined in Section III-D. Each drive can be supplied by either of the two onboard power inputs via a selectable voltage header on each module. Current regulation is achieved based on the analog input VREF and the voltage on the ISEN pin, which is proportional to motor current through an external sensing resistor. This is adjustable via the Rsen resistor and can provide a range of current limits depending on the application. The motor drive can supply a continuous 1.4A with an adjustable peak rating of 2.5A (adjustable up to 3.6 A). The remaining proportional drives can supply a continuous 500mA with an adjustable peak rating of 700mA
-(adjustable up to 700mA).
-<!-- TODO Add close up image of section showing wiring
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOCloseUpProp.png" alt="MyRIO Proportional Drive" width="600">
-</p> -->
+The PneuSoRD has 6 Proportional Drive modules. The motor driver is sized for a peak current up to 1.4A. This driver is designed for DC motor pumps that typically require a current of 500mA to 1A. This output could also be used to drive a logic signal for a larger pump. The 5 proportional drivers are sized for a peak current capacity up to 700mA. This driver is designed for driving proportional valves that typically require 200mA to 500mA.
+
+The motor and proportional valve drivers are based off a synchronous rectifier buck converter. The switch is driven by a 40-200kHz PWM signal with a variable duty cycle, which can be generated by the myRIO or Arduino Due controllers. The switch (DRV88703.6A) is a half-bridge motor driver and was selected for the comprehensive overload protection, which is described in Section .
+
+Each circuit channel can be supplied by either of two power supply inputs via a jumper on each circuit channel. The maximum output current is set by the **Rsen** resistor, which provides over-current and short-circuit protection. In the default configuration, the motor driver channel can supply 1.4A continuously and 2.5A peak, which is adjustable up to 3.6A. The remaining 5 proportional driver channels can supply 500mA continuously and 
 
 ### On/Off Drive
-Since On/Off valves can be driven via a simple digital signal, the PneuSoRD takes advantage of the 26 Digital Input/Output (DIO) pins on the myRIO. The TPS1H000 is a fully protected single channel high-side power switch with an integrated power Field-Effect Transistor (FET). An adjustable current limit via the Rsen resistor improves system reliability by limiting the inrush or overload current. The high accuracy of the current limit improves overload protection. The trip delay capacitor has been selected to minimise the trip time if a fault event occurs. A light emitting diode is connected to the common collector fault pin, this provides user feedback if a fault event were to occur.
-Each drive can be supplied by either of the two onboard power inputs via a selectable voltage header on each module. The On/Off drives can supply a continuous 500mA.
-<!-- TODO Add close up image of section showing wiring
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOCloseUpOnOff.png" alt="MyRIO OnOff Drive" width="600">
-</p> -->
+Since on-off valves can be driven by a digital signal, the PneuSoRD uses 26 digital pins on the myRIO and Arduino Due. The TPS1H000 is a fully protected single channel high-side power switch with an integrated power transistor. Each drive contains an adjustable current limit that can be adjusted via the **Rsen** resistor. This protection feature limits the inrush or overload current. The trip delay capacitor has been selected to minimise the trip time if a fault event occurs. A light emitting diode is connected to the fault pin, which provides user feedback during a fault condition.
+
+Each drive channel can be supplied by either of the power supply inputs via a jumper on each channel. The on-off channels can supply 500mA continuously, with a peak of 500mA, which is adjustable up to 1A.
 
 ### Sensor Input
-A total of 8 sensor input headers are included on the PneuSoRD. These are designed to provide each sensor with 5V. Primarily, this input is designed for 0-5V sensors that can be read via the ADC input of the myRIO. An optional resistor can be added to allow 4-20mA style sensors to be used.
-<!-- TODO Add close up image of section showing wiring
-<p align="center">
-	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/MyRIOCloseUpSensor.png" alt="MyRIO Sensors" width="600">
-</p> -->
-
+A total of 8 sensor input headers are included on the PneuSoRD, with an additional 4 included on the Arduino Due shield. A linear regulator provides each sensor with 5V, this reduces sensor noises caused by noise on the power rail due to the switching of the other components. Primarily, this input is designed for 0-5V sensors that can be read via the ADC input of the microcontroller. An optional resistor can be added to suit 4mA to 20mA style sensors.
 
 ## Arduino Shield
-TODO add diagram of shield and overview
+<!-- TODO add diagram of shield and overview -->
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/DueAdapter.png" alt="Arduino Shield Render" width="600">
 </p>
