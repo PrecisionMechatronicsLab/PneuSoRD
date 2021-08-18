@@ -65,18 +65,18 @@ Double clicking on the IO block for each device allows the user to configure the
 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffPump.png" alt="LabView Control32OnOffPump interface" width="400">
+	3/2 on-off pump configuration
 </p>
-3/2 on-off pump configuration
 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffValve.png" alt="LabView Control32OnOffValve interface" width="400">
+	3/2 on-off valve configuration
 </p>
-3/2 on-off valve configuration
 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/LabVIEW/Control32OnOffSensor.png" alt="LabView Control32OnOffSensor interface" width="400">
+	3/2 on-off sensor
 </p>
-3/2 on-off sensor
 
 ### Step 5 - Running the LabVIEW vi
 Once the configuration is complete, the system is ready to test. Use the *run* and *Abort Execution* buttons to control the device. 
@@ -285,15 +285,15 @@ The bang-bang controller, three states can be used. In the first state, valve 1 
 
 Valve 1
 
-	Switch on: P_{ref} - P > h
+* Switch on: P_{ref} - P > h
 
-	Switch off: P_{ref} - P = 0
+* Switch off: P_{ref} - P = 0
 
 Valve 2
 
-	Switch on: P_{ref} - P < -h
+* Switch on: P_{ref} - P < -h
 
-	Switch off: P_{ref} - P = 0
+* Switch off: P_{ref} - P = 0
 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22hys.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="400"> 
