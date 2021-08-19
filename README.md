@@ -263,10 +263,12 @@ The accumulator pressure requires closed-loop control to provide a constant sour
 
 For the system with a 3/2 on-off valve, the bang-bang controller is implemented with two states, which are:
 
-P < P_{ref} - h  
-P > P_{ref} + h 
+<p align="center">
+P < P_ref - h  
+P > P_ref + h 
+</p>
 
-where **P** is the measured pressure, **P_{ref}** is the reference pressure and **h** is half the size of the hysteresis band. Lower values of hysteresis result in less steady-state error but also higher switching frequency. These conditions are implemented by using a relay block in Simulink or a relay function in a subsystem in LabVIEW with "switch on point" equal to **h** and "switch off point" equal to **-h**. Note that hysteresis is introduced for the bang-bang controllers to prevent excessive switching, which is particularly beneficial for the systems with 2/2 valves.
+where **P** is the measured pressure, **P_ref** is the reference pressure and **h** is half the size of the hysteresis band. Lower values of hysteresis result in less steady-state error but also higher switching frequency. These conditions are implemented by using a relay block in Simulink or a relay function in a subsystem in LabVIEW with "switch on point" equal to **h** and "switch off point" equal to **-h**. Note that hysteresis is introduced for the bang-bang controllers to prevent excessive switching, which is particularly beneficial for the systems with 2/2 valves.
 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-32hys.png" alt="3/2 on-off valve system with bang-bang controller" width="400"> 
@@ -288,15 +290,15 @@ The bang-bang controller, three states can be used. In the first state, valve 1 
 
 Valve 1
 
-* Switch on: P_{ref} - P > h
+* Switch on: P_ref - P > h
 
-* Switch off: P_{ref} - P = 0
+* Switch off: P_ref - P = 0
 
 Valve 2
 
-* Switch on: P_{ref} - P < -h
+* Switch on: P_ref - P < -h
 
-* Switch off: P_{ref} - P = 0
+* Switch off: P_ref - P = 0
 
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/ControlSchemes-22hys.png" alt="2x 2/2 on-off valve system with bang-bang controller" width="400"> 
