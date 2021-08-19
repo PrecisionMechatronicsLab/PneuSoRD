@@ -180,7 +180,15 @@ LabVIEW offers a graphical programming approach that helps you visualize every a
 Below is an overview of some of the major LabVIEW blocks used for a the outlined control configurations for the PneuSoRD.
 
 ## Installed packages
-<!-- TODO Insert Image and list of installed labview packages for use -->
+
+Download the 'LabVIEW 2019 myRIO Software Bundle' https://www.ni.com/en-au/support/downloads/software-products/download.labview-myrio-software-bundle.html and install these optional dependencies
+-	JKI VI Package Manager
+-	LabVIEW
+-	LabVIEW myRIO Toolkit
+-	LabVIEW Real-Time Module
+-	LabVIEW Control Design and Simulation Module
+-	LabVIEW MathScript Module
+-	LabVIEW Robotics Module for LabRIO
 
 ## Main Loop
 <p align="center">
