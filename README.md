@@ -5,22 +5,14 @@
  -->
 
 # Overview
+A link to the paper can be found [here]: http://www.precisionmechatronicslab.com/wp-content/uploads/2021/09/PneuSoRD_Paper_Submission.pdf
+
+PneuSoRD is available to be purchased from: http://www.precisionmechatronicslab.com/soft-robotics/
 <p align="center">
 	<img src="https://github.com/PrecisionMechatronicsLab/PneuSoRD/blob/main/figures/OverviewDiagram.png" alt="Overview of the Pneumatic Soft Robotics Controller (PneuSoRD), including the electronics driver board and National Instruments myRIO controller, which is connected to a single pump and air receiver, up to 5 proportional valves, and 26 on-off valves. Soft robotic glove reproduced with permission from [35]. Copyright 2019, Mary Ann Liebert, Inc." width="600">
 </p>
 
 The Pneumatic Soft Robotics Driver (PneuSoRD) is an open-source power electronics design for controlling pneumatic soft robotic actuators with a large number of simultaneous actuated chambers. This system is designed around the two major categories of valve types. On/Off valves with single or multiple solenoids which each take a binary input and proportional valves which can be driven from a variable DC voltage. Therefore, the PneuSoRD design encompasses a modular solution for each drive system: The "Proportional Drive" and the "On/Off Drive". Each module has been designed to be as generic as possible to allow control of a large range of valves with an available control strategy for each. These two modules can be driven by either a myRIO 1950 embedded controller through a real-time visual user interface with LabVIEW or an Arduino DUE.
-
-A link to the paper can be found [here]: <!-- http://www.reddit.com  TODO -->
-
-PneuSoRD is available to be purchased from: **Temporarily unavailable**
-<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="HB4DUWE5M24YY">
-<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-</form> -->
-
 
 **NOTE:** rev. 0.2 boards (unmarked revision) require the primary voltage input to be 7-12V. The secondary input can be used 7-25V.
 
