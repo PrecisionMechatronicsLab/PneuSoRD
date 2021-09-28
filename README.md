@@ -5,7 +5,7 @@
  -->
 
 # Overview
-A link to the paper can be found [here]: http://www.precisionmechatronicslab.com/wp-content/uploads/2021/09/PneuSoRD_Paper_Submission.pdf
+A link to the paper can be found here: http://www.precisionmechatronicslab.com/wp-content/uploads/2021/09/PneuSoRD_Paper_Submission.pdf
 
 PneuSoRD is available to be purchased from: http://www.precisionmechatronicslab.com/soft-robotics/
 <p align="center">
