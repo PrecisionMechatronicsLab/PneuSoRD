@@ -1,0 +1,117 @@
+Removed Pin From Net: NetName=AI1 Pin=J1-1
+Removed Pin From Net: NetName=AGND Pin=J1-2
+Removed Pin From Net: NetName=AI5 Pin=J2-1
+Removed Pin From Net: NetName=AI6 Pin=J3-1
+Removed Pin From Net: NetName=AI7 Pin=J4-1
+Removed Pin From Net: NetName=AI2 Pin=J6-1
+Removed Pin From Net: NetName=AGND Pin=J6-2
+Removed Pin From Net: NetName=AI3 Pin=J7-1
+Removed Pin From Net: NetName=AGND Pin=J7-2
+Removed Pin From Net: NetName=AI4 Pin=J8-1
+Removed Pin From Net: NetName=AGND Pin=J8-2
+Removed Member From Class: ClassName=Main Member=J6
+Removed Member From Class: ClassName=Main Member=J7
+Removed Member From Class: ClassName=Main Member=J8
+Removed Member From Class: ClassName=Main Member=J9
+Change Component Footprint: Designator=J2 Old Footprint=BNC_INS90 New Footprint=BNC_INS90_Dual
+Change Component Footprint: Designator=J3 Old Footprint=BNC_INS90 New Footprint=BNC_INS90_Dual
+Change Component Footprint: Designator=J4 Old Footprint=BNC_INS90 New Footprint=BNC_INS90_Dual
+Change Component Footprint: Designator=J5 Old Footprint=BNC_INS90 New Footprint=BNC_INS90_Dual
+Change Component Comment : Designator=J2 Old Comment=CON BNC Blk New Comment=CON BNC Dual B
+Change Component Comment : Designator=J3 Old Comment=CON BNC Blk New Comment=CON BNC Dual B
+Change Component Comment : Designator=J4 Old Comment=CON BNC Blk New Comment=CON BNC Dual B
+Change Component Comment : Designator=J5 Old Comment=CON BNC Blk New Comment=CON BNC Dual B
+Change Component Designator: OldDesignator=J9 NewDesignator=J1
+Change component parameters: Designator = "J2" ("J2"); Footprint = "BNC_INS90"; UniqueID = "\PYJENRNQ" ("\PYJENRNQ")
+Change component parameters (AddParameter): Name = "Digikey Order"; Value = "ARF2111-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Farnell Order"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Amphenol"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Code"; Value = "031-6575"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Order"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J3" ("J3"); Footprint = "BNC_INS90"; UniqueID = "\KDKLHDGM" ("\KDKLHDGM")
+Change component parameters (AddParameter): Name = "Digikey Order"; Value = "ARF2111-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Farnell Order"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Amphenol"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Code"; Value = "031-6575"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Order"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J4" ("J4"); Footprint = "BNC_INS90"; UniqueID = "\SFUGMZGY" ("\SFUGMZGY")
+Change component parameters (AddParameter): Name = "Digikey Order"; Value = "ARF2111-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Farnell Order"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Amphenol"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Code"; Value = "031-6575"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Order"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J5" ("J5"); Footprint = "BNC_INS90"; UniqueID = "\HLFIFFDJ" ("\HLFIFFDJ")
+Change component parameters (AddParameter): Name = "Digikey Order"; Value = "ARF2111-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Farnell Order"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Amphenol"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Code"; Value = "031-6575"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Order"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=AI2 Pin=J2-1
+Added Pin To Net: NetName=AI1 Pin=J2-3
+Added Pin To Net: NetName=AGND Pin=J2-4
+Added Pin To Net: NetName=AI4 Pin=J3-1
+Added Pin To Net: NetName=AI3 Pin=J3-3
+Added Pin To Net: NetName=AGND Pin=J3-4
+Added Pin To Net: NetName=AI6 Pin=J4-1
+Added Pin To Net: NetName=AI5 Pin=J4-3
+Added Pin To Net: NetName=AGND Pin=J4-4
+Added Pin To Net: NetName=AI7 Pin=J5-3
+Added Pin To Net: NetName=AGND Pin=J5-4
+Added Pin To Net: NetName=AI1 Pin=P1-3
+Added Pin To Net: NetName=AI2 Pin=P1-5
+Added Pin To Net: NetName=AGND Pin=P1-6
+Added Pin To Net: NetName=AI3 Pin=P1-7
+Added Pin To Net: NetName=GND Pin=P1-8
+Added Pin To Net: NetName=AI4 Pin=P1-9
+Added Pin To Net: NetName=DIO1 Pin=P1-11
+Added Pin To Net: NetName=GND Pin=P1-12
+Added Pin To Net: NetName=DIO2 Pin=P1-13
+Added Pin To Net: NetName=DIO3 Pin=P1-15
+Added Pin To Net: NetName=GND Pin=P1-16
+Added Pin To Net: NetName=DIO4 Pin=P1-17
+Added Pin To Net: NetName=DIO5 Pin=P1-18
+Added Pin To Net: NetName=DIO6 Pin=P1-19
+Added Pin To Net: NetName=GND Pin=P1-20
+Added Pin To Net: NetName=DIO7 Pin=P1-21
+Added Pin To Net: NetName=DIO8 Pin=P1-22
+Added Pin To Net: NetName=DIO9 Pin=P1-23
+Added Pin To Net: NetName=GND Pin=P1-24
+Added Pin To Net: NetName=DIO10 Pin=P1-25
+Added Pin To Net: NetName=DIO11 Pin=P1-26
+Added Pin To Net: NetName=PWMM Pin=P1-27
+Added Pin To Net: NetName=GND Pin=P1-28
+Added Pin To Net: NetName=PWM1 Pin=P1-29
+Added Pin To Net: NetName=GND Pin=P1-30
+Added Pin To Net: NetName=PWM2 Pin=P1-31
+Added Pin To Net: NetName=DIO12 Pin=P1-32
+Added Pin To Net: NetName=DIO13 Pin=P1-34
+Added Pin To Net: NetName=AI5 Pin=P2-3
+Added Pin To Net: NetName=AI6 Pin=P2-5
+Added Pin To Net: NetName=AGND Pin=P2-6
+Added Pin To Net: NetName=AI7 Pin=P2-7
+Added Pin To Net: NetName=GND Pin=P2-8
+Added Pin To Net: NetName=AI8 Pin=P2-9
+Added Pin To Net: NetName=DIO14 Pin=P2-11
+Added Pin To Net: NetName=GND Pin=P2-12
+Added Pin To Net: NetName=DIO15 Pin=P2-13
+Added Pin To Net: NetName=DIO16 Pin=P2-15
+Added Pin To Net: NetName=GND Pin=P2-16
+Added Pin To Net: NetName=DIO17 Pin=P2-17
+Added Pin To Net: NetName=DIO18 Pin=P2-18
+Added Pin To Net: NetName=DIO19 Pin=P2-19
+Added Pin To Net: NetName=GND Pin=P2-20
+Added Pin To Net: NetName=DIO20 Pin=P2-21
+Added Pin To Net: NetName=DIO21 Pin=P2-22
+Added Pin To Net: NetName=DIO22 Pin=P2-23
+Added Pin To Net: NetName=GND Pin=P2-24
+Added Pin To Net: NetName=DIO23 Pin=P2-25
+Added Pin To Net: NetName=DIO24 Pin=P2-26
+Added Pin To Net: NetName=PWM3 Pin=P2-27
+Added Pin To Net: NetName=GND Pin=P2-28
+Added Pin To Net: NetName=PWM4 Pin=P2-29
+Added Pin To Net: NetName=GND Pin=P2-30
+Added Pin To Net: NetName=PWM5 Pin=P2-31
+Added Pin To Net: NetName=DIO25 Pin=P2-32
+Added Pin To Net: NetName=DIO26 Pin=P2-34
+Added Member To Class: ClassName=Main Member=Component P1 61203421621
+Added Member To Class: ClassName=Main Member=Component P2 61203421621

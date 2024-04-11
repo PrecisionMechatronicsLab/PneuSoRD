@@ -1,0 +1,164 @@
+Add Component: Footprint Not Found BNC_INS90
+Add Component: Footprint Not Found BNC_INS90
+Add Component: Footprint Not Found BNC_INS90
+Add Component: Footprint Not Found BNC_INS90
+Add Component: Footprint Not Found BNC_INS90
+Add Component: Footprint Not Found BNC_INS90
+Add Component: Footprint Not Found BNC_INS90
+Add Component: Footprint Not Found BNC_INS90
+Add Component: Footprint Not Found CON D STD 50Way Male RA
+Added Component: Designator=P1(61203422121)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Copper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "5.6896mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fastening Type"; Value = "Latch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "PBT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "1GO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "62.68mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "32855485"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Spacing"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Added Component: Designator=P2(61203422121)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Copper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "5.6896mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fastening Type"; Value = "Latch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "PBT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "1GO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "62.68mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "32855485"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Spacing"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=AGND Pin=P1-6
+Added Pin To Net: NetName=AGND Pin=P2-6
+Added Net: Name=AGND
+Added Pin To Net: NetName=AI1 Pin=P1-3
+Added Net: Name=AI1
+Added Pin To Net: NetName=AI2 Pin=P1-5
+Added Net: Name=AI2
+Added Pin To Net: NetName=AI3 Pin=P1-7
+Added Net: Name=AI3
+Added Pin To Net: NetName=AI4 Pin=P1-9
+Added Net: Name=AI4
+Added Pin To Net: NetName=AI5 Pin=P2-3
+Added Net: Name=AI5
+Added Pin To Net: NetName=AI6 Pin=P2-5
+Added Net: Name=AI6
+Added Pin To Net: NetName=AI7 Pin=P2-7
+Added Net: Name=AI7
+Added Pin To Net: NetName=AI8 Pin=P2-9
+Added Net: Name=AI8
+Added Pin To Net: NetName=DIO1 Pin=P1-11
+Added Net: Name=DIO1
+Added Pin To Net: NetName=DIO2 Pin=P1-13
+Added Net: Name=DIO2
+Added Pin To Net: NetName=DIO3 Pin=P1-15
+Added Net: Name=DIO3
+Added Pin To Net: NetName=DIO4 Pin=P1-17
+Added Net: Name=DIO4
+Added Pin To Net: NetName=DIO5 Pin=P1-18
+Added Net: Name=DIO5
+Added Pin To Net: NetName=DIO6 Pin=P1-19
+Added Net: Name=DIO6
+Added Pin To Net: NetName=DIO7 Pin=P1-21
+Added Net: Name=DIO7
+Added Pin To Net: NetName=DIO8 Pin=P1-22
+Added Net: Name=DIO8
+Added Pin To Net: NetName=DIO9 Pin=P1-23
+Added Net: Name=DIO9
+Added Pin To Net: NetName=DIO10 Pin=P1-25
+Added Net: Name=DIO10
+Added Pin To Net: NetName=DIO11 Pin=P1-26
+Added Net: Name=DIO11
+Added Pin To Net: NetName=DIO12 Pin=P1-32
+Added Net: Name=DIO12
+Added Pin To Net: NetName=DIO13 Pin=P1-34
+Added Net: Name=DIO13
+Added Pin To Net: NetName=DIO14 Pin=P2-11
+Added Net: Name=DIO14
+Added Pin To Net: NetName=DIO15 Pin=P2-13
+Added Net: Name=DIO15
+Added Pin To Net: NetName=DIO16 Pin=P2-15
+Added Net: Name=DIO16
+Added Pin To Net: NetName=DIO17 Pin=P2-17
+Added Net: Name=DIO17
+Added Pin To Net: NetName=DIO18 Pin=P2-18
+Added Net: Name=DIO18
+Added Pin To Net: NetName=DIO19 Pin=P2-19
+Added Net: Name=DIO19
+Added Pin To Net: NetName=DIO20 Pin=P2-21
+Added Net: Name=DIO20
+Added Pin To Net: NetName=DIO21 Pin=P2-22
+Added Net: Name=DIO21
+Added Pin To Net: NetName=DIO22 Pin=P2-23
+Added Net: Name=DIO22
+Added Pin To Net: NetName=DIO23 Pin=P2-25
+Added Net: Name=DIO23
+Added Pin To Net: NetName=DIO24 Pin=P2-26
+Added Net: Name=DIO24
+Added Pin To Net: NetName=DIO25 Pin=P2-32
+Added Net: Name=DIO25
+Added Pin To Net: NetName=DIO26 Pin=P2-34
+Added Net: Name=DIO26
+Added Pin To Net: NetName=GND Pin=P1-8
+Added Pin To Net: NetName=GND Pin=P1-12
+Added Pin To Net: NetName=GND Pin=P1-16
+Added Pin To Net: NetName=GND Pin=P1-20
+Added Pin To Net: NetName=GND Pin=P1-24
+Added Pin To Net: NetName=GND Pin=P1-28
+Added Pin To Net: NetName=GND Pin=P1-30
+Added Pin To Net: NetName=GND Pin=P2-8
+Added Pin To Net: NetName=GND Pin=P2-12
+Added Pin To Net: NetName=GND Pin=P2-16
+Added Pin To Net: NetName=GND Pin=P2-20
+Added Pin To Net: NetName=GND Pin=P2-24
+Added Pin To Net: NetName=GND Pin=P2-28
+Added Pin To Net: NetName=GND Pin=P2-30
+Added Net: Name=GND
+Added Pin To Net: NetName=PWM1 Pin=P1-29
+Added Net: Name=PWM1
+Added Pin To Net: NetName=PWM2 Pin=P1-31
+Added Net: Name=PWM2
+Added Pin To Net: NetName=PWM3 Pin=P2-27
+Added Net: Name=PWM3
+Added Pin To Net: NetName=PWM4 Pin=P2-29
+Added Net: Name=PWM4
+Added Pin To Net: NetName=PWM5 Pin=P2-31
+Added Net: Name=PWM5
+Added Pin To Net: NetName=PWMM Pin=P1-27
+Added Net: Name=PWMM
+Added Class: Name=Main

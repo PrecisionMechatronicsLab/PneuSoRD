@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: C:\Users\Taylor\Documents\PneuSoRD\Dspace_Adapter\Pneusord_Dspace_Adapter\Main.PcbDoc
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Polygon Clearance|Scope=Board|Minimum=15.00

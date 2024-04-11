@@ -1,0 +1,16 @@
+Added Pin To Net: NetName=AI4 Pin=J3-1
+Added Pin To Net: NetName=AGND Pin=J3-2
+Added Pin To Net: NetName=AI3 Pin=J3-3
+Added Pin To Net: NetName=AGND Pin=J3-4
+Added Pin To Net: NetName=AI6 Pin=J4-1
+Added Pin To Net: NetName=AGND Pin=J4-2
+Added Pin To Net: NetName=AI5 Pin=J4-3
+Added Pin To Net: NetName=AGND Pin=J4-4
+Added Pin To Net: NetName=AI8 Pin=J5-1
+Added Pin To Net: NetName=AGND Pin=J5-2
+Added Pin To Net: NetName=AI7 Pin=J5-3
+Added Pin To Net: NetName=AGND Pin=J5-4
+Added Member To Class: ClassName=Main Member=Component J1 163A18649X
+Added Member To Class: ClassName=Main Member=Component J3 CON BNC Dual B
+Added Member To Class: ClassName=Main Member=Component J4 CON BNC Dual B
+Added Member To Class: ClassName=Main Member=Component J5 CON BNC Dual B
